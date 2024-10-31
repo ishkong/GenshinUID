@@ -40,6 +40,16 @@ PROP_ATTR_MAP = {
     'Hydro': '42',
     'Pyro': '40',
 }
+AT_MAP = {
+    'maxHp': 'maxHP',
+    'atk': 'maxATK',
+    'def': 'maxDEF',
+    'elementalMastery': 'elementalMastery',
+    'energyRecharge': 'energyRecharge',
+    'healingBonus': 'healingBonus',
+    'critRate': 'critRate',
+    'critDamage': 'critDMG',
+}
 
 ENKA_API: List[Literal['enka', 'microgg']] = ['enka', 'microgg']
 is_enable_akasha = gsconfig.get_config('EnableAkasha').data
@@ -73,7 +83,7 @@ async def switch_api():
 async def enka_to_dict(
     uid: str, enka_data: Optional[EnkaData] = None
 ) -> Union[List[dict], str]:
-    """
+    '''
     :说明:
       访问enkaAPI并转换为genshinUID的数据Json。
     :参数:
@@ -81,7 +91,7 @@ async def enka_to_dict(
       * ``enka_data: Optional[dict] = None``: 来自enka的dict, 可留空。
     :返回:
       * ``刷新完成提示语: str``: 包含刷新成功的角色列表。
-    """
+    '''
     if '未找到绑定的UID' in uid:
         return UID_HINT
     if enka_data:
@@ -233,39 +243,39 @@ async def enka_to_dict(
         # 处理属性
         fight_prop = {}
         # 血量
-        fight_prop['hp'] = char["fightPropMap"]["2000"]
-        fight_prop['baseHp'] = char["fightPropMap"]["1"]
+        fight_prop['hp'] = char['fightPropMap']['2000']
+        fight_prop['baseHp'] = char['fightPropMap']['1']
         fight_prop['addHp'] = (
-            char["fightPropMap"]["2000"] - char["fightPropMap"]["1"]
+            char['fightPropMap']['2000'] - char['fightPropMap']['1']
         )
         # 攻击力
-        fight_prop['atk'] = char["fightPropMap"]["2001"]
-        fight_prop['baseAtk'] = char["fightPropMap"]["4"]
+        fight_prop['atk'] = char['fightPropMap']['2001']
+        fight_prop['baseAtk'] = char['fightPropMap']['4']
         fight_prop['addAtk'] = (
-            char["fightPropMap"]["2001"] - char["fightPropMap"]["4"]
+            char['fightPropMap']['2001'] - char['fightPropMap']['4']
         )
         # 防御力
-        fight_prop['def'] = char["fightPropMap"]["2002"]
-        fight_prop['baseDef'] = char["fightPropMap"]["7"]
+        fight_prop['def'] = char['fightPropMap']['2002']
+        fight_prop['baseDef'] = char['fightPropMap']['7']
         fight_prop['addDef'] = (
-            char["fightPropMap"]["2002"] - char["fightPropMap"]["7"]
+            char['fightPropMap']['2002'] - char['fightPropMap']['7']
         )
         # 元素精通
-        fight_prop['elementalMastery'] = char["fightPropMap"]["28"]
+        fight_prop['elementalMastery'] = char['fightPropMap']['28']
         # 暴击率
-        fight_prop['critRate'] = char["fightPropMap"]["20"]
+        fight_prop['critRate'] = char['fightPropMap']['20']
         # 暴击伤害
-        fight_prop['critDmg'] = char["fightPropMap"]["22"]
+        fight_prop['critDmg'] = char['fightPropMap']['22']
         # 充能效率
-        fight_prop['energyRecharge'] = char["fightPropMap"]["23"]
+        fight_prop['energyRecharge'] = char['fightPropMap']['23']
         # 治疗&受治疗
-        fight_prop['healBonus'] = char["fightPropMap"]["26"]
-        fight_prop['healedBonus'] = char["fightPropMap"]["27"]
+        fight_prop['healBonus'] = char['fightPropMap']['26']
+        fight_prop['healedBonus'] = char['fightPropMap']['27']
         # 物理伤害加成 & 抗性
-        fight_prop['physicalDmgSub'] = char["fightPropMap"]["29"]
-        fight_prop['physicalDmgBonus'] = char["fightPropMap"]["30"]
+        fight_prop['physicalDmgSub'] = char['fightPropMap']['29']
+        fight_prop['physicalDmgBonus'] = char['fightPropMap']['30']
         # 伤害加成
-        fight_prop['dmgBonus'] = char["fightPropMap"][
+        fight_prop['dmgBonus'] = char['fightPropMap'][
             PROP_ATTR_MAP[char_data['avatarElement']]
         ]
 
@@ -317,7 +327,7 @@ async def enka_to_dict(
             and effect_raw is not None
             and int(effect_raw['rarity']) > 2
         ):
-            effect = effect_raw[f'r{weapon_info["weaponAffix"]}'][
+            effect = effect_raw[f'r{weapon_info['weaponAffix']}'][
                 'description'
             ]
         else:
@@ -441,9 +451,32 @@ async def _restore_cv_data(uid: str, now: str):
     else:
         rank_data = {}
     if not isinstance(data, int):
-        for i in data['data']:
+        data1, data2 = data[0], data[1]
+        for i in data1['data']:
+            for j in data2['data']:
+                if i['_id'] == j['_id']:
+                    _value = 0
+                    stats = {'critValue': j['critValue']}
+                    for k in j['stats']:
+                        if k in AT_MAP:
+                            _k = AT_MAP[k]
+                        elif k.endswith('DamageBonus'):
+                            if j['stats'][k]['value'] > 0:
+                                _value = j['stats'][k]['value']
+                                continue
+                            else:
+                                continue
+                        else:
+                            _k = k
+                        stats[_k] = j['stats'][k]['value']
+                    stats['DMG'] = _value
+
+                    break
+
+            cal = i['calculations']
+            cal['fit']['stats'] = stats
             rank_data[i['characterId']] = {
-                'calculations': i['calculations'],
+                'calculations': cal,
                 'time': now,
             }
         async with aiofiles.open(path, 'w', encoding='UTF-8') as file:

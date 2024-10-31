@@ -40,7 +40,7 @@ sv_get_original_pic = SV('查看面板原图', priority=5)
 
 
 @sv_akasha.on_command('排名统计')
-async def sned_rank_data(bot: Bot, ev: Event):
+async def send_rank_data(bot: Bot, ev: Event):
     # 获取uid
     uid = await get_uid(bot, ev)
     if uid is None:
@@ -50,7 +50,7 @@ async def sned_rank_data(bot: Bot, ev: Event):
 
 
 @sv_akasha.on_command('排名列表')
-async def sned_rank_pic(bot: Bot, ev: Event):
+async def send_rank_pic(bot: Bot, ev: Event):
     # 获取uid
     uid = await get_uid(bot, ev)
     if uid is None:
@@ -67,7 +67,7 @@ async def sned_rank_pic(bot: Bot, ev: Event):
 
 
 @sv_akasha.on_prefix('角色排行榜')
-async def sned_role_rank_pic(bot: Bot, ev: Event):
+async def send_role_rank_pic(bot: Bot, ev: Event):
     # 获取角色名
     msg = ''.join(re.findall('[\u4e00-\u9fa5 ]', ev.text))
     if not msg:
@@ -83,7 +83,7 @@ async def sned_role_rank_pic(bot: Bot, ev: Event):
 
 
 @sv_akasha.on_prefix('角色排名')
-async def sned_my_role_rank_pic(bot: Bot, ev: Event):
+async def send_my_role_rank_pic(bot: Bot, ev: Event):
     # 获取角色名
     msg = ''.join(re.findall('[\u4e00-\u9fa5 ]', ev.text))
     if not msg:
@@ -105,7 +105,7 @@ async def sned_my_role_rank_pic(bot: Bot, ev: Event):
 
 
 @sv_akasha.on_command('圣遗物排名')
-async def sned_arti_rank_pic(bot: Bot, ev: Event):
+async def send_arti_rank_pic(bot: Bot, ev: Event):
     # 获取排序名
     msg = ''.join(re.findall('[\u4e00-\u9fa5 ]', ev.text))
     logger.info(f'[圣遗物排名]排序: {msg}')
@@ -122,14 +122,14 @@ async def sned_arti_rank_pic(bot: Bot, ev: Event):
 
 
 @sv_enka_admin.on_fullmatch('刷新全部圣遗物仓库')
-async def sned_fresh_all_list(bot: Bot, ev: Event):
+async def send_fresh_all_list(bot: Bot, ev: Event):
     await bot.send('开始执行...可能时间较久, 执行完成会有提示, 请勿重复执行!')
     await check_artifacts_list()
     await bot.send('执行完成!')
 
 
 @sv_get_enka.on_fullmatch(('刷新圣遗物仓库', '强制刷新圣遗物仓库'), block=True)
-async def sned_fresh_list(bot: Bot, ev: Event):
+async def send_fresh_list(bot: Bot, ev: Event):
     # 获取uid
     uid = await get_uid(bot, ev)
     if uid is None:
@@ -144,7 +144,7 @@ async def sned_fresh_list(bot: Bot, ev: Event):
 
 
 @sv_get_enka.on_command('圣遗物仓库')
-async def sned_aritifacts_list(bot: Bot, ev: Event):
+async def send_aritifacts_list(bot: Bot, ev: Event):
     # 获取uid
     uid = await get_uid(bot, ev)
     if uid is None:
@@ -171,7 +171,7 @@ async def sned_aritifacts_list(bot: Bot, ev: Event):
 
 
 @sv_get_original_pic.on_fullmatch(('原图'))
-async def sned_original_pic(bot: Bot, ev: Event):
+async def send_original_pic(bot: Bot, ev: Event):
     if ev.reply:
         path = TEMP_PATH / f'{ev.reply}.jpg'
         if path.exists():

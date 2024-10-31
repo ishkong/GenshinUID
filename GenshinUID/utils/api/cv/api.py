@@ -2,6 +2,7 @@ BASE = 'https://akasha.cv/api'
 
 MAIN_API = BASE + '/filters/accounts/'
 RANK_API = BASE + '/getCalculationsForUser/{}'
+BUILDS_API = BASE + '/builds?uid={}'
 DATA_API = BASE + '/user/{}'
 REFRESH_API = BASE + '/user/refresh/{}'
 LEADERBOARD_API = BASE + '/v2/leaderboards/categories?characterId={}'

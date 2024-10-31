@@ -1,5 +1,7 @@
+import json
 from typing import Dict, Union
 
+import aiofiles
 from PIL import Image, ImageDraw
 from gsuid_core.models import Event
 from gsuid_core.utils.image.convert import convert_img
@@ -11,6 +13,7 @@ from .get_akasha_data import _get_rank
 from ..utils.image.image_tools import get_avatar
 from ..utils.map.name_covert import avatar_id_to_name
 from .to_card import draw_char_card, draw_weapon_card
+from ..utils.resource.RESOURCE_PATH import PLAYER_PATH
 from ..utils.fonts.genshin_fonts import (
     gs_font_15,
     gs_font_22,
@@ -43,12 +46,24 @@ async def draw_rank_img(ev: Event, uid: str) -> Union[bytes, str]:
 
     img.paste(title, (0, 0), title)
 
-    for index, char in enumerate(rank_data):
+    _rank_data = {}
+    for char in rank_data:
+        stats = rank_data[char]['calculations']['fit']['stats']
+        if stats is None:
+            continue
+        _rank_data[char] = rank_data[char]
+
+    path = PLAYER_PATH / uid / 'rank.json'
+    async with aiofiles.open(path, 'w', encoding='UTF-8') as file:
+        await file.write(json.dumps(_rank_data, indent=4, ensure_ascii=False))
+
+    for index, char in enumerate(_rank_data):
         raw_data = rank_data[char]
 
         time = raw_data['time']
         data = raw_data['calculations']['fit']
         stats: Dict = data['stats']
+
         char_name = await avatar_id_to_name(char)
         result = '{:.2f}'.format(data['result'])
         rank = data['ranking']
@@ -73,7 +88,7 @@ async def draw_rank_img(ev: Event, uid: str) -> Union[bytes, str]:
         )
         weapon_card = weapon_card.resize((110, 110))
 
-        _color = get_color(_pc, [10, 23, 34, 55], True)
+        _color = get_color(_pc, [55, 34, 23, 10])
         cv_color = get_color(_cv, [210, 185, 170, 150])
 
         color = Image.new('RGBA', (950, 300), _color)

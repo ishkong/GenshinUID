@@ -9,6 +9,7 @@ from .api import (
     MAIN_API,
     RANK_API,
     SORT_API,
+    BUILDS_API,
     REFRESH_API,
     ARTI_SORT_API,
     LEADERBOARD_API,
@@ -170,14 +171,21 @@ class _CvApi:
             {'sessionID': self.sessionID},
         )
 
-    async def get_rank_data(self, uid: str) -> Union[Dict, int]:
+    async def get_rank_data(self, uid: str) -> Union[Tuple[Dict, Dict], int]:
         await self.get_base_data(uid)
         await self.get_refresh_data(uid)
-        data = await self._cv_request(
+        data1 = await self._cv_request(
             RANK_API.format(uid), 'GET', self._HEADER
         )
+        data2 = await self._cv_request(
+            BUILDS_API.format(uid), 'GET', self._HEADER
+        )
         await self.session.close()
-        return data
+        if isinstance(data1, int):
+            return data1
+        if isinstance(data2, int):
+            return data2
+        return data1, data2
 
     async def close(self):
         # 调用session对象的close方法关闭会话

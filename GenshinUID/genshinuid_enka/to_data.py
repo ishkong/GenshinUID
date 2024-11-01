@@ -327,7 +327,7 @@ async def enka_to_dict(
             and effect_raw is not None
             and int(effect_raw['rarity']) > 2
         ):
-            effect = effect_raw[f'r{weapon_info['weaponAffix']}'][
+            effect = effect_raw[f'r{weapon_info["weaponAffix"]}'][
                 'description'
             ]
         else:

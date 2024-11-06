@@ -1,11 +1,12 @@
 import asyncio
+from typing import List
 
 from gsuid_core.sv import SV
 from gsuid_core.bot import Bot
 from gsuid_core.gss import gss
-from gsuid_core.models import Event
 from gsuid_core.aps import scheduler
 from gsuid_core.logger import logger
+from gsuid_core.models import Event, Message
 from gsuid_core.segment import MessageSegment
 from gsuid_core.utils.error_reply import UID_HINT
 
@@ -51,11 +52,11 @@ async def notice_job(force: bool = False):
             for BOT_ID in gss.active_bot:
                 bot = gss.active_bot[BOT_ID]
                 for user_id in result[bot_id]['direct']:
-                    msg_list = [
-                        '✅[原神] 推送提醒:\n',
-                        result[bot_id]['direct'][user_id],
+                    msg_list: List[Message] = [
+                        MessageSegment.text('✅[原神] 推送提醒:\n'),
+                        MessageSegment.text(result[bot_id]['direct'][user_id]),
                     ]
-                    msg_list.append(MessageSegment.text)
+                    msg_list.append(MessageSegment.text(MR_NOTICE))
                     await bot.target_send(
                         msg_list, 'direct', user_id, bot_id, '', ''
                     )

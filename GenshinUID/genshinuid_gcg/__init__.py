@@ -1,6 +1,7 @@
 from gsuid_core.sv import SV
 from gsuid_core.bot import Bot
 from gsuid_core.models import Event
+from gsuid_core.logger import logger
 from gsuid_core.message_models import Button
 from gsuid_core.utils.error_reply import UID_HINT
 
@@ -16,7 +17,7 @@ async def send_gcg_pic(bot: Bot, ev: Event):
     uid = await get_uid(bot, ev)
     if uid is None:
         return await bot.send(UID_HINT)
-    await bot.logger.info('[七圣召唤]uid: {}'.format(uid))
+    logger.info(f'[七圣召唤] uid: {uid}')
 
     im = await draw_gcg_info(uid)
     await bot.send_option(im, [Button('✅我的卡组', '我的卡组')])
@@ -27,7 +28,7 @@ async def send_deck_pic(bot: Bot, ev: Event):
     uid = await get_uid(bot, ev)
     if uid is None:
         return await bot.send(UID_HINT)
-    await bot.logger.info('[我的卡组]uid: {}'.format(uid))
+    logger.info(f'[我的卡组] uid: {uid}')
     if not ev.text:
         deck_id = 1
     elif ev.text.strip().isdigit():

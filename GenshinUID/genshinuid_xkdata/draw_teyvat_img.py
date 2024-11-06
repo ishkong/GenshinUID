@@ -46,6 +46,14 @@ async def get_teyvat_title(data: TeyvatAbyssRank):
     return title
 
 
+def gen_char(char: Image.Image, char_star: int):
+    char = char.resize((128, 128))
+    char = char.convert('RGBA')
+    char_bg = Image.open(TEXT_PATH / f'char{char_star}_bg.png')
+    char_bg.paste(char, (11, 11), char)
+    return char_bg
+
+
 async def draw_teyvat_team_img():
     data = await teyvat_api.get_abyss_rank()
     if isinstance(data, int):
@@ -92,9 +100,7 @@ async def draw_teyvat_team_img():
                 await download(icon_url, 16, char_name)
 
             char = Image.open(char_path).convert('RGBA')
-            char = char.resize((128, 128))
-            char_bg = Image.open(TEXT_PATH / f'char{role["star"]}_bg.png')
-            char_bg.paste(char, (11, 11), char)
+            char_bg = gen_char(char, role["star"])
             bar.paste(char_bg, (55 + rindex * 150, 20), char_bg)
 
         bar_draw = ImageDraw.Draw(bar)

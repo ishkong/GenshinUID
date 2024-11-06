@@ -2,10 +2,11 @@ from copy import deepcopy
 from typing import Dict, List, Union, cast
 
 from gsuid_core.utils.api.mys_api import _MysApi
+from gsuid_core.utils.api.mys.api import RECORD_BASE, RECORD_BASE_OS
 from gsuid_core.utils.api.mys.tools import get_ds_token, get_web_ds_token
 
-from .api import widget_url, new_abyss_url, char_detail_url
-from .models import Character, WidgetResin, PoetryAbyssDatas
+from .api import widget_url, calendar_url, new_abyss_url, char_detail_url
+from .models import Character, WidgetResin, CalendarData, PoetryAbyssDatas
 
 
 class GsMysAPI(_MysApi):
@@ -13,6 +14,26 @@ class GsMysAPI(_MysApi):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+
+    async def get_calendar_data(self, uid: str) -> Union[CalendarData, int]:
+        server_id = self.RECOGNIZE_SERVER.get(uid[0])
+        header = deepcopy(self._HEADER)
+        ck = await self.get_ck(uid, 'OWNER')
+        if ck is None:
+            return -51
+        header['Cookie'] = ck
+        base = RECORD_BASE_OS if self.check_os(uid) else RECORD_BASE
+        data = await self._mys_request(
+            calendar_url,
+            'POST',
+            header,
+            data={"role_id": uid, "server": server_id},
+            base_url=base,
+        )
+
+        if isinstance(data, Dict):
+            data = cast(CalendarData, data['data'])
+        return data
 
     async def get_widget_resin_data(self, uid: str) -> Union[WidgetResin, int]:
         header = deepcopy(self._HEADER)
@@ -22,8 +43,13 @@ class GsMysAPI(_MysApi):
         header['Cookie'] = sk
         header['DS'] = get_web_ds_token(True)
         header['x-rpc-channel'] = 'miyousheluodi'
+        base = RECORD_BASE_OS if self.check_os(uid) else RECORD_BASE
         data = await self._mys_request(
-            widget_url, 'GET', header, {'game_id': 2}
+            widget_url,
+            'GET',
+            header,
+            {'game_id': 2},
+            base_url=base,
         )
         if isinstance(data, Dict):
             data = cast(WidgetResin, data['data'])
@@ -33,6 +59,7 @@ class GsMysAPI(_MysApi):
         self, uid: str
     ) -> Union[PoetryAbyssDatas, int]:
         server_id = self.RECOGNIZE_SERVER.get(uid[0])
+        base = RECORD_BASE_OS if self.check_os(uid) else RECORD_BASE
         HEADER = deepcopy(self._HEADER)
         ck = await self.get_ck(uid, 'OWNER')
         if ck is None:
@@ -51,6 +78,7 @@ class GsMysAPI(_MysApi):
             'GET',
             HEADER,
             params,
+            base_url=base,
         )
         if isinstance(data, Dict):
             data = cast(PoetryAbyssDatas, data['data'])
@@ -66,6 +94,7 @@ class GsMysAPI(_MysApi):
             return -51
         HEADER['Cookie'] = ck
 
+        base = RECORD_BASE_OS if self.check_os(uid) else RECORD_BASE
         data = await self._mys_request(
             char_detail_url,
             'POST',
@@ -75,6 +104,7 @@ class GsMysAPI(_MysApi):
                 "server": server_id,
                 "character_ids": char_id_list,
             },
+            base_url=base,
         )
 
         if isinstance(data, Dict):

@@ -42,7 +42,8 @@ async def send_abyss_pic(bot: Bot, ev: Event):
 
 
 @sv_get_abyss_database.on_fullmatch(
-    ('深渊队伍', '深渊队伍统计', '深渊队伍推荐', '深渊组队'), block=True
+    ('深渊队伍', '深渊队伍统计', '深渊队伍推荐', '深渊组队', '深渊配队'),
+    block=True,
 )
 async def send_abyss_team_pic(bot: Bot, ev: Event):
     # await draw_xk_abyss_img()

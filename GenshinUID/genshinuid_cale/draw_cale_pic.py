@@ -23,6 +23,7 @@ GREY = (189, 189, 189)
 TEXT_PATH = Path(__file__).parent / 'texture2d'
 yes = Image.open(TEXT_PATH / 'yes.png')
 no = Image.open(TEXT_PATH / 'no.png')
+un = Image.open(TEXT_PATH / 'un.png')
 
 
 def convert_timestamp_to_string(timestamp):
@@ -37,16 +38,20 @@ def convert_timestamp_to_string(timestamp):
 async def draw_act(act: Union[Act, FixedAct]):
     act_bg = Image.open(TEXT_PATH / 'act_bg.png')
 
-    fg = yes if act['is_finished'] else no
-    t = '已完成' if act['is_finished'] else '未完成'
+    if act['status'] == 2:
+        fg = yes if act['is_finished'] else no
+        t = '已完成' if act['is_finished'] else '未完成'
+        g = '结束剩余时间: '
+    else:
+        fg = un
+        t = '未开始'
+        g = '开启剩余时间: '
 
     act_bg.paste(fg, (0, 0), fg)
     act_draw = ImageDraw.Draw(act_bg)
 
     act_name = act['name']
-    limit_time = '剩余时间：' + convert_timestamp_to_string(
-        act['countdown_seconds']
-    )
+    limit_time = g + convert_timestamp_to_string(act['countdown_seconds'])
 
     act_draw.text((94, 60), act_name, 'white', gs_font_38, 'lm')
     act_draw.text((130, 102), limit_time, GREY, gs_font_26, 'lm')

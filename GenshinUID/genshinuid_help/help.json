@@ -137,6 +137,14 @@
         "need_ck": true,
         "need_sk": false,
         "need_admin": false
+      },
+      {
+        "name": "个人日历",
+        "desc": "检查自己的日程表",
+        "eg": "个人日历",
+        "need_ck": true,
+        "need_sk": false,
+        "need_admin": false
       }
     ]
   },

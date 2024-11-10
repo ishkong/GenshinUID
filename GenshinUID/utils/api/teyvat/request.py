@@ -4,8 +4,8 @@ from typing import Any, Dict, Union, Literal, Optional, cast
 from httpx import AsyncClient
 from gsuid_core.logger import logger
 
-from .api import AbyssRank_API
-from .models import TeyvatAbyssRank
+from .api import AbyssRank_API, ReturnList_API
+from .models import TeyvatAbyssRank, TeyvatReturnList
 
 
 class _TeyvatAPI:
@@ -17,6 +17,16 @@ class _TeyvatAPI:
         if isinstance(data, Dict) and 'code' in data:
             if data['code'] == 200:
                 return cast(TeyvatAbyssRank, data)
+            else:
+                return data['code']
+        else:
+            return -500
+
+    async def get_return_list(self) -> Union[TeyvatReturnList, int]:
+        data = await self._teyvat_request(ReturnList_API)
+        if isinstance(data, Dict) and 'code' in data:
+            if data['code'] == 200:
+                return cast(TeyvatReturnList, data)
             else:
                 return data['code']
         else:

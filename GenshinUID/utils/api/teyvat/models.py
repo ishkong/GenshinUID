@@ -102,3 +102,34 @@ class TeyvatAbyssRank(TypedDict):
         List[CharacterUsage],
         List[TeyvatTeam],
     ]
+
+
+class CharacterData(TypedDict):
+    role: str
+    avatar: str
+    star: int
+    days: int
+    intro: str
+    history: List[str]
+    width: int
+
+
+class WeaponData(TypedDict):
+    role: str
+    avatar: str
+    star: int
+    days: int
+    intro: str
+    history: List[str]
+    width: int
+
+
+class TeyvatReturnList(TypedDict):
+    code: int
+    version: str
+    result: Tuple[
+        List[CharacterData],
+        List[CharacterData],
+        List[WeaponData],
+        List[WeaponData],
+    ]

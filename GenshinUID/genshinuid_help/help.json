@@ -546,6 +546,14 @@
         "need_ck": false,
         "need_sk": false,
         "need_admin": false
+      },
+      {
+        "name": "未复刻列表",
+        "desc": "查看角色武器卡池未复刻时间",
+        "eg": "未复刻列表",
+        "need_ck": false,
+        "need_sk": false,
+        "need_admin": false
       }
     ]
   },

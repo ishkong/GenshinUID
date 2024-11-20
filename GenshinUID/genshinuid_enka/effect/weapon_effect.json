@@ -1,4 +1,128 @@
 {
+  "厄水之祸": {
+    "normal": {
+      "normal_effect": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      }
+    },
+    "fight": {
+      "fight_effect": {
+        "1": "AB:dmgBonus+20;AB:critRate+8",
+        "2": "AB:dmgBonus+25;AB:critRate+10",
+        "3": "AB:dmgBonus+30;AB:critRate+12",
+        "4": "AB:dmgBonus+35;AB:critRate+14",
+        "5": "AB:dmgBonus+40;AB:critRate+16"
+      },
+      "group_effect": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "time": 7,
+      "extra": {
+        
+      }
+    }
+  },
+  "乘浪的回旋": {
+    "normal": {
+      "normal_effect": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      }
+    },
+    "fight": {
+      "fight_effect": {
+        "1": "addHp+44",
+        "2": "addHp+55",
+        "3": "addHp+66",
+        "4": "addHp+77",
+        "5": "addHp+88"
+      },
+      "group_effect": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "time": 7,
+      "extra": {
+        
+      }
+    }
+  },
+  "缀花之翎": {
+    "normal": {
+      "normal_effect": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      }
+    },
+    "fight": {
+      "fight_effect": {
+        "1": "B:dmgBonus+36",
+        "2": "B:dmgBonus+45",
+        "3": "B:dmgBonus+54",
+        "4": "B:dmgBonus+63",
+        "5": "B:dmgBonus+72"
+      },
+      "group_effect": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "time": 0,
+      "extra": {
+        
+      }
+    }
+  },
+  "星鹫赤羽": {
+    "normal": {
+      "normal_effect": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      }
+    },
+    "fight": {
+      "fight_effect": {
+        "1": "addAtk+24;B:dmgBonus+48;Q:dmgBonus+24",
+        "2": "addAtk+30;B:dmgBonus+60;Q:dmgBonus+30",
+        "3": "addAtk+36;B:dmgBonus+72;Q:dmgBonus+36",
+        "4": "addAtk+42;B:dmgBonus+84;Q:dmgBonus+42",
+        "5": "addAtk+48;B:dmgBonus+96;Q:dmgBonus+48"
+      },
+      "group_effect": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "time": 12,
+      "extra": {
+        
+      }
+    }
+  },
   "弥坚骨": {
     "normal": {
       "normal_effect": {

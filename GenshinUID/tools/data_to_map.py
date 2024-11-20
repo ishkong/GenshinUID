@@ -310,10 +310,13 @@ async def avatarName2ElementJson() -> None:
         if _id in ['10000005', '10000007'] or int(_id) >= 11000000:
             continue
         name = avatarId2Name[_id]
-        data = httpx.get(
-            f'https://info.minigg.cn/characters?query={name}'
-        ).json()
-        if 'retcode' in data:
+        try:
+            data = httpx.get(
+                f'https://info.minigg.cn/characters?query={name}'
+            ).json()
+            if 'retcode' in data:
+                data = await convert_ambr_to_minigg(_id)
+        except json.decoder.JSONDecodeError:
             data = await convert_ambr_to_minigg(_id)
         if data is not None and 'code' not in data:
             temp[name] = elementMap[data['elementText']]

@@ -6,7 +6,7 @@ from typing import List
 from pathlib import Path
 from copy import deepcopy
 
-import httpx
+# import httpx
 
 sys.path.append(str(Path(__file__).parents[2]))
 sys.path.append(str(Path(__file__).parents[5]))
@@ -18,7 +18,7 @@ from ..utils.map.GS_MAP_PATH import (  # noqa: E402
 )
 
 char_list: List[str] = []
-char_action = {}
+# char_action = {}
 INDEX_MAP = ['', 'A', 'E', 'Q']
 attack_type_list = {
     '普通攻击': 'A',
@@ -329,26 +329,46 @@ def find_tag(labels: List, index: int, char: str, parameters: dict) -> dict:
 
 
 async def main():
+    with open(
+        str(
+            Path(__file__).parents[1]
+            / 'genshinuid_enka'
+            / 'effect'
+            / 'char_action.json'
+        ),
+        'r',
+        encoding='UTF-8',
+    ) as file:
+        char_action = json.load(file)
+
     for char_id in avatarId2Name:
         char_list.append(avatarId2Name[char_id])
     char_list.extend(['旅行者(风)', '旅行者(雷)', '旅行者(岩)', '旅行者(草)'])
     for char in char_list:
         print(char)
+        '''
         talent_data = httpx.get(
             f'https://info.minigg.cn/talents?query={char}'
         ).json()
         if 'retcode' in talent_data:
-            for _id in avatarId2Name:
-                if avatarId2Name[_id] == char:
-                    char_id = _id
-                    break
-            else:
-                continue
-            if int(char_id) >= 11000000:
-                continue
+        '''
+        for _id in avatarId2Name:
+            if avatarId2Name[_id] == char:
+                char_id = _id
+                break
+        else:
+            continue
+        if int(char_id) >= 11000000:
+            continue
+
+        try:
             talent_data = await convert_ambr_to_talent(char_id)
-            if talent_data is None:
-                continue
+        except Exception as e:
+            print(e)
+            continue
+
+        if talent_data is None:
+            continue
         result = {}
         for i in range(1, 4):
             skill = talent_data['combat{}'.format(str(i))]

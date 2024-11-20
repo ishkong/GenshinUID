@@ -17619,6 +17619,600 @@
         "route": "Overgrown Breacher Primus",
         "icon": "UI_MonsterIcon_Ovacua_Chaos_02"
     },
+    "22120101": {
+        "id": 22120101,
+        "type": "MONSTER_BOSS",
+        "affix": [
+            {
+                "name": "怪物专用-次数盾标记-深渊次数盾",
+                "description": "所有怪物使用深渊次数盾必须挂载",
+                "abilityName": [
+                    "Monster_Common_FrequencyShieldLabel_AbyssShield"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010040,
+                "hpPercent": 75
+            },
+            {
+                "id": 22010040,
+                "hpPercent": 50
+            },
+            {
+                "id": 22010040,
+                "hpPercent": 25
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 217.34399,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 75.36,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": {
+            "102": {
+                "name": "冒险阅历",
+                "rank": 3,
+                "icon": "UI_ItemIcon_102",
+                "count": "200"
+            },
+            "105": {
+                "name": "好感经验",
+                "rank": 3,
+                "icon": "UI_ItemIcon_105"
+            },
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "104111": {
+                "name": "燃愿玛瑙碎屑",
+                "rank": 2,
+                "icon": "UI_ItemIcon_104111"
+            },
+            "104112": {
+                "name": "燃愿玛瑙断片",
+                "rank": 3,
+                "icon": "UI_ItemIcon_104112"
+            },
+            "104113": {
+                "name": "燃愿玛瑙块",
+                "rank": 4,
+                "icon": "UI_ItemIcon_104113"
+            },
+            "104114": {
+                "name": "燃愿玛瑙",
+                "rank": 5,
+                "icon": "UI_ItemIcon_104114"
+            },
+            "104141": {
+                "name": "最胜紫晶碎屑",
+                "rank": 2,
+                "icon": "UI_ItemIcon_104141"
+            },
+            "104142": {
+                "name": "最胜紫晶断片",
+                "rank": 3,
+                "icon": "UI_ItemIcon_104142"
+            },
+            "104143": {
+                "name": "最胜紫晶块",
+                "rank": 4,
+                "icon": "UI_ItemIcon_104143"
+            },
+            "104144": {
+                "name": "最胜紫晶",
+                "rank": 5,
+                "icon": "UI_ItemIcon_104144"
+            },
+            "104151": {
+                "name": "自在松石碎屑",
+                "rank": 2,
+                "icon": "UI_ItemIcon_104151"
+            },
+            "104152": {
+                "name": "自在松石断片",
+                "rank": 3,
+                "icon": "UI_ItemIcon_104152"
+            },
+            "104153": {
+                "name": "自在松石块",
+                "rank": 4,
+                "icon": "UI_ItemIcon_104153"
+            },
+            "104154": {
+                "name": "自在松石",
+                "rank": 5,
+                "icon": "UI_ItemIcon_104154"
+            },
+            "113067": {
+                "name": "深邃纠缠的凝视",
+                "rank": 4,
+                "icon": "UI_ItemIcon_113067",
+                "count": "2.5556"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400047": {
+                "name": "冒险家",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10010_4"
+            },
+            "400088": {
+                "name": "角斗士的终幕礼",
+                "rank": 4,
+                "icon": "UI_RelicIcon_15001_4"
+            },
+            "400089": {
+                "name": "角斗士的终幕礼",
+                "rank": 5,
+                "icon": "UI_RelicIcon_15001_4"
+            },
+            "400098": {
+                "name": "流浪大地的乐团",
+                "rank": 4,
+                "icon": "UI_RelicIcon_15003_4"
+            },
+            "400099": {
+                "name": "流浪大地的乐团",
+                "rank": 5,
+                "icon": "UI_RelicIcon_15003_4"
+            },
+            "400127": {
+                "name": "祭火之人",
+                "rank": 3,
+                "icon": "UI_RelicIcon_15009_3"
+            },
+            "400128": {
+                "name": "祭火之人",
+                "rank": 4,
+                "icon": "UI_RelicIcon_15009_3"
+            }
+        },
+        "name": "深邃摹结株·I型",
+        "route": "Tenebrous Papilla: Type I",
+        "icon": "UI_MonsterIcon_TheAbyss_Dendrite"
+    },
+    "22121601": {
+        "id": 22121601,
+        "type": "MONSTER_BOSS",
+        "affix": [
+            {
+                "name": "怪物专用-次数盾标记-深渊次数盾",
+                "description": "所有怪物使用深渊次数盾必须挂载",
+                "abilityName": [
+                    "Monster_Common_FrequencyShieldLabel_AbyssShield"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010040,
+                "hpPercent": 75
+            },
+            {
+                "id": 22010040,
+                "hpPercent": 50
+            },
+            {
+                "id": 22010040,
+                "hpPercent": 25
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 217.34399,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 75.36,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": {
+            "102": {
+                "name": "冒险阅历",
+                "rank": 3,
+                "icon": "UI_ItemIcon_102",
+                "count": "200"
+            },
+            "105": {
+                "name": "好感经验",
+                "rank": 3,
+                "icon": "UI_ItemIcon_105"
+            },
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "104111": {
+                "name": "燃愿玛瑙碎屑",
+                "rank": 2,
+                "icon": "UI_ItemIcon_104111"
+            },
+            "104112": {
+                "name": "燃愿玛瑙断片",
+                "rank": 3,
+                "icon": "UI_ItemIcon_104112"
+            },
+            "104113": {
+                "name": "燃愿玛瑙块",
+                "rank": 4,
+                "icon": "UI_ItemIcon_104113"
+            },
+            "104114": {
+                "name": "燃愿玛瑙",
+                "rank": 5,
+                "icon": "UI_ItemIcon_104114"
+            },
+            "104141": {
+                "name": "最胜紫晶碎屑",
+                "rank": 2,
+                "icon": "UI_ItemIcon_104141"
+            },
+            "104142": {
+                "name": "最胜紫晶断片",
+                "rank": 3,
+                "icon": "UI_ItemIcon_104142"
+            },
+            "104143": {
+                "name": "最胜紫晶块",
+                "rank": 4,
+                "icon": "UI_ItemIcon_104143"
+            },
+            "104144": {
+                "name": "最胜紫晶",
+                "rank": 5,
+                "icon": "UI_ItemIcon_104144"
+            },
+            "104151": {
+                "name": "自在松石碎屑",
+                "rank": 2,
+                "icon": "UI_ItemIcon_104151"
+            },
+            "104152": {
+                "name": "自在松石断片",
+                "rank": 3,
+                "icon": "UI_ItemIcon_104152"
+            },
+            "104153": {
+                "name": "自在松石块",
+                "rank": 4,
+                "icon": "UI_ItemIcon_104153"
+            },
+            "104154": {
+                "name": "自在松石",
+                "rank": 5,
+                "icon": "UI_ItemIcon_104154"
+            },
+            "113067": {
+                "name": "深邃纠缠的凝视",
+                "rank": 4,
+                "icon": "UI_ItemIcon_113067",
+                "count": "2.5556"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400047": {
+                "name": "冒险家",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10010_4"
+            },
+            "400088": {
+                "name": "角斗士的终幕礼",
+                "rank": 4,
+                "icon": "UI_RelicIcon_15001_4"
+            },
+            "400089": {
+                "name": "角斗士的终幕礼",
+                "rank": 5,
+                "icon": "UI_RelicIcon_15001_4"
+            },
+            "400098": {
+                "name": "流浪大地的乐团",
+                "rank": 4,
+                "icon": "UI_RelicIcon_15003_4"
+            },
+            "400099": {
+                "name": "流浪大地的乐团",
+                "rank": 5,
+                "icon": "UI_RelicIcon_15003_4"
+            },
+            "400127": {
+                "name": "祭火之人",
+                "rank": 3,
+                "icon": "UI_RelicIcon_15009_3"
+            },
+            "400128": {
+                "name": "祭火之人",
+                "rank": 4,
+                "icon": "UI_RelicIcon_15009_3"
+            }
+        },
+        "name": "深邃摹结株·I型",
+        "route": "Tenebrous Papilla: Type I",
+        "icon": "UI_MonsterIcon_TheAbyss_Dendrite"
+    },
+    "22121701": {
+        "id": 22121701,
+        "type": "MONSTER_BOSS",
+        "affix": [
+            {
+                "name": "怪物专用-次数盾标记-深渊次数盾",
+                "description": "所有怪物使用深渊次数盾必须挂载",
+                "abilityName": [
+                    "Monster_Common_FrequencyShieldLabel_AbyssShield"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010040,
+                "hpPercent": 75
+            },
+            {
+                "id": 22010040,
+                "hpPercent": 50
+            },
+            {
+                "id": 22010040,
+                "hpPercent": 25
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 217.34399,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 75.36,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": {
+            "102": {
+                "name": "冒险阅历",
+                "rank": 3,
+                "icon": "UI_ItemIcon_102",
+                "count": "200"
+            },
+            "105": {
+                "name": "好感经验",
+                "rank": 3,
+                "icon": "UI_ItemIcon_105"
+            },
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "104111": {
+                "name": "燃愿玛瑙碎屑",
+                "rank": 2,
+                "icon": "UI_ItemIcon_104111"
+            },
+            "104112": {
+                "name": "燃愿玛瑙断片",
+                "rank": 3,
+                "icon": "UI_ItemIcon_104112"
+            },
+            "104113": {
+                "name": "燃愿玛瑙块",
+                "rank": 4,
+                "icon": "UI_ItemIcon_104113"
+            },
+            "104114": {
+                "name": "燃愿玛瑙",
+                "rank": 5,
+                "icon": "UI_ItemIcon_104114"
+            },
+            "104141": {
+                "name": "最胜紫晶碎屑",
+                "rank": 2,
+                "icon": "UI_ItemIcon_104141"
+            },
+            "104142": {
+                "name": "最胜紫晶断片",
+                "rank": 3,
+                "icon": "UI_ItemIcon_104142"
+            },
+            "104143": {
+                "name": "最胜紫晶块",
+                "rank": 4,
+                "icon": "UI_ItemIcon_104143"
+            },
+            "104144": {
+                "name": "最胜紫晶",
+                "rank": 5,
+                "icon": "UI_ItemIcon_104144"
+            },
+            "104151": {
+                "name": "自在松石碎屑",
+                "rank": 2,
+                "icon": "UI_ItemIcon_104151"
+            },
+            "104152": {
+                "name": "自在松石断片",
+                "rank": 3,
+                "icon": "UI_ItemIcon_104152"
+            },
+            "104153": {
+                "name": "自在松石块",
+                "rank": 4,
+                "icon": "UI_ItemIcon_104153"
+            },
+            "104154": {
+                "name": "自在松石",
+                "rank": 5,
+                "icon": "UI_ItemIcon_104154"
+            },
+            "113067": {
+                "name": "深邃纠缠的凝视",
+                "rank": 4,
+                "icon": "UI_ItemIcon_113067",
+                "count": "2.5556"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400047": {
+                "name": "冒险家",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10010_4"
+            },
+            "400088": {
+                "name": "角斗士的终幕礼",
+                "rank": 4,
+                "icon": "UI_RelicIcon_15001_4"
+            },
+            "400089": {
+                "name": "角斗士的终幕礼",
+                "rank": 5,
+                "icon": "UI_RelicIcon_15001_4"
+            },
+            "400098": {
+                "name": "流浪大地的乐团",
+                "rank": 4,
+                "icon": "UI_RelicIcon_15003_4"
+            },
+            "400099": {
+                "name": "流浪大地的乐团",
+                "rank": 5,
+                "icon": "UI_RelicIcon_15003_4"
+            },
+            "400127": {
+                "name": "祭火之人",
+                "rank": 3,
+                "icon": "UI_RelicIcon_15009_3"
+            },
+            "400128": {
+                "name": "祭火之人",
+                "rank": 4,
+                "icon": "UI_RelicIcon_15009_3"
+            }
+        },
+        "name": "深邃摹结株·I型",
+        "route": "Tenebrous Papilla: Type I",
+        "icon": "UI_MonsterIcon_TheAbyss_Dendrite"
+    },
     "22120201": {
         "id": 22120201,
         "type": "MONSTER_ORDINARY",
@@ -34035,6 +34629,210 @@
         "route": "Flowing Blade Skirmisher",
         "icon": "UI_MonsterIcon_Human_Female_NoWeapon_Mosasaurus"
     },
+    "25500201": {
+        "id": 25500201,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-战前喷漆罐-暖色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Warm"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落-成女",
+                "description": "部落特殊技时长不同，针对体型替换配置",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo_Female"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 16.3008,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 20.096,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "结羽勇士·腾空士",
+        "route": "Winged Warrior: Skysoarer",
+        "icon": "UI_MonsterIcon_Human_Female_NoWeapon_Flamingo"
+    },
+    "25500202": {
+        "id": 25500202,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-战前喷漆罐-暖色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Warm"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落-成女",
+                "description": "部落特殊技时长不同，针对体型替换配置",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo_Female"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 16.3008,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 20.096,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "结羽勇士·腾空士",
+        "route": "Winged Warrior: Skysoarer",
+        "icon": "UI_MonsterIcon_Human_Female_NoWeapon_Flamingo"
+    },
+    "25500203": {
+        "id": 25500203,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-战前喷漆罐-暖色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Warm"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落-成女",
+                "description": "部落特殊技时长不同，针对体型替换配置",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo_Female"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 16.3008,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 20.096,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "结羽勇士·腾空士",
+        "route": "Winged Warrior: Skysoarer",
+        "icon": "UI_MonsterIcon_Human_Female_NoWeapon_Flamingo"
+    },
     "25501101": {
         "id": 25501101,
         "type": "MONSTER_ORDINARY",
@@ -34606,6 +35404,446 @@
         "route": "Swiftstep Seeker",
         "icon": "UI_MonsterIcon_Human_Female_Sword_Hookwalker"
     },
+    "25501301": {
+        "id": 25501301,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-单手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_Sword_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-暖色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Warm"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落-成女",
+                "description": "部落特殊技时长不同，针对体型替换配置",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo_Female"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 21.7344,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 22.608,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "结羽勇士·削羽人",
+        "route": "Winged Warrior: Feathershedder",
+        "icon": "UI_MonsterIcon_Human_Female_Sword_Flamingo"
+    },
+    "25501302": {
+        "id": 25501302,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-单手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_Sword_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-暖色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Warm"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落-成女",
+                "description": "部落特殊技时长不同，针对体型替换配置",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo_Female"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 21.7344,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 22.608,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "结羽勇士·削羽人",
+        "route": "Winged Warrior: Feathershedder",
+        "icon": "UI_MonsterIcon_Human_Female_Sword_Flamingo"
+    },
+    "25501303": {
+        "id": 25501303,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-单手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_Sword_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-暖色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Warm"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落-成女",
+                "description": "部落特殊技时长不同，针对体型替换配置",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo_Female"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 21.7344,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 22.608,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "结羽勇士·削羽人",
+        "route": "Winged Warrior: Feathershedder",
+        "icon": "UI_MonsterIcon_Human_Female_Sword_Flamingo"
+    },
+    "25501401": {
+        "id": 25501401,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-单手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_Sword_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-冷色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Cool"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-灵视龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Shamansaurus"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 21.7344,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 22.608,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "灵觉勇士·执意师",
+        "route": "Spiritspeaker Warrior: Determinator",
+        "icon": "UI_MonsterIcon_Human_Female_Sword_Shamansaurus"
+    },
+    "25501402": {
+        "id": 25501402,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-单手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_Sword_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-冷色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Cool"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-灵视龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Shamansaurus"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 21.7344,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 22.608,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "灵觉勇士·执意师",
+        "route": "Spiritspeaker Warrior: Determinator",
+        "icon": "UI_MonsterIcon_Human_Female_Sword_Shamansaurus"
+    },
+    "25501403": {
+        "id": 25501403,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-单手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_Sword_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-冷色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Cool"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-灵视龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Shamansaurus"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "5.2灵视龙创生的头套人（wq）",
+                "description": "5.2灵视龙头套人创生死亡（wq）",
+                "abilityName": [
+                    "MonsterEliteAffix_Shamansaurus_CreateMonsterDieV52"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 21.7344,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 22.608,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "灵觉勇士·执意师",
+        "route": "Spiritspeaker Warrior: Determinator",
+        "icon": "UI_MonsterIcon_Human_Female_Sword_Shamansaurus"
+    },
     "25502101": {
         "id": 25502101,
         "type": "MONSTER_ORDINARY",
@@ -35096,6 +36334,218 @@
         "route": "Flowing Blade Grease-Saw",
         "icon": "UI_MonsterIcon_Human_Male_Sword_Mosasaurus"
     },
+    "25502301": {
+        "id": 25502301,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-单手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_Sword_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-冷色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Cool"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-灵视龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Shamansaurus"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 21.7344,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 22.608,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "灵觉勇士·控念师",
+        "route": "Spiritspeaker Warrior: Psychokinetic",
+        "icon": "UI_MonsterIcon_Human_Male_Sword_Shamansaurus"
+    },
+    "25502302": {
+        "id": 25502302,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-单手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_Sword_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-冷色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Cool"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-灵视龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Shamansaurus"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 21.7344,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 22.608,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "灵觉勇士·控念师",
+        "route": "Spiritspeaker Warrior: Psychokinetic",
+        "icon": "UI_MonsterIcon_Human_Male_Sword_Shamansaurus"
+    },
+    "25502303": {
+        "id": 25502303,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-单手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_Sword_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-冷色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Cool"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-灵视龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Shamansaurus"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "5.2灵视龙创生的头套人（wq）",
+                "description": "5.2灵视龙头套人创生死亡（wq）",
+                "abilityName": [
+                    "MonsterEliteAffix_Shamansaurus_CreateMonsterDieV52"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 21.7344,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 22.608,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "灵觉勇士·控念师",
+        "route": "Spiritspeaker Warrior: Psychokinetic",
+        "icon": "UI_MonsterIcon_Human_Male_Sword_Shamansaurus"
+    },
     "25503101": {
         "id": 25503101,
         "type": "MONSTER_ORDINARY",
@@ -35396,6 +36846,218 @@
         "route": "Swiftstep Armed Courier",
         "icon": "UI_MonsterIcon_Human_Male_Claymore_Hookwalker"
     },
+    "25503201": {
+        "id": 25503201,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-成男双手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_Male_Standard_Claymore_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-冷色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Cool"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-灵视龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Shamansaurus"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 27.168,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 25.12,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "灵觉勇士·冥思者",
+        "route": "Spiritspeaker Warrior: Contemplator",
+        "icon": "UI_MonsterIcon_Human_Male_Claymore_Shamansaurus"
+    },
+    "25503202": {
+        "id": 25503202,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-成男双手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_Male_Standard_Claymore_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-冷色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Cool"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-灵视龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Shamansaurus"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 27.168,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 25.12,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "灵觉勇士·冥思者",
+        "route": "Spiritspeaker Warrior: Contemplator",
+        "icon": "UI_MonsterIcon_Human_Male_Claymore_Shamansaurus"
+    },
+    "25503203": {
+        "id": 25503203,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-成男双手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_Male_Standard_Claymore_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-冷色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Cool"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-灵视龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Shamansaurus"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "5.2灵视龙创生的头套人（wq）",
+                "description": "5.2灵视龙头套人创生死亡（wq）",
+                "abilityName": [
+                    "MonsterEliteAffix_Shamansaurus_CreateMonsterDieV52"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 27.168,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 25.12,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "灵觉勇士·冥思者",
+        "route": "Spiritspeaker Warrior: Contemplator",
+        "icon": "UI_MonsterIcon_Human_Male_Claymore_Shamansaurus"
+    },
     "25504101": {
         "id": 25504101,
         "type": "MONSTER_ORDINARY",
@@ -35666,6 +37328,234 @@
         "name": "铸砂勇士·碎盾者",
         "route": "Forged Sand Shieldbreaker",
         "icon": "UI_MonsterIcon_Human_MuscleMan_Claymore_Drillhead"
+    },
+    "25504201": {
+        "id": 25504201,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-壮男双手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_MuscleMan_Claymore_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-暖色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Warm"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落-壮男",
+                "description": "部落特殊技时长不同，针对体型替换配置",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo_MuscleMan"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 27.168,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 25.12,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "结羽勇士·驭空客",
+        "route": "Winged Warrior: Skymaster",
+        "icon": "UI_MonsterIcon_Human_MuscleMan_Claymore_Flamingo"
+    },
+    "25504202": {
+        "id": 25504202,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-壮男双手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_MuscleMan_Claymore_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-暖色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Warm"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落-壮男",
+                "description": "部落特殊技时长不同，针对体型替换配置",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo_MuscleMan"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 27.168,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 25.12,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "结羽勇士·驭空客",
+        "route": "Winged Warrior: Skymaster",
+        "icon": "UI_MonsterIcon_Human_MuscleMan_Claymore_Flamingo"
+    },
+    "25504203": {
+        "id": 25504203,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "部落战士-壮男双手利器",
+                "description": "用于对攻击Type和特效配置进行区分",
+                "abilityName": [
+                    "Monster_Human_MuscleMan_Claymore_EventAlter_Sharp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-战前喷漆罐-暖色",
+                "description": "战前喷漆手中的Item颜色",
+                "abilityName": [
+                    "Monster_Human_FreePoseManager_SprayCan_Warm"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落标记",
+                "description": "影响部落特殊技的施放",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "部落战士-翼手龙部落-壮男",
+                "description": "部落特殊技时长不同，针对体型替换配置",
+                "abilityName": [
+                    "Monster_Human_TribeUltMark_Flamingo_MuscleMan"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 27.168,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 25.12,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "结羽勇士·驭空客",
+        "route": "Winged Warrior: Skymaster",
+        "icon": "UI_MonsterIcon_Human_MuscleMan_Claymore_Flamingo"
     },
     "25505101": {
         "id": 25505101,
@@ -36803,6 +38693,306 @@
         "name": "鳍游龙武士·裂礁之涛",
         "route": "Koholasaurus Warrior: Reefsplitter",
         "icon": "UI_MonsterIcon_Tribalwarrior_Launcher_Mosasaurus"
+    },
+    "25510701": {
+        "id": 25510701,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": [
+            {
+                "id": 22010011,
+                "hpPercent": 66
+            },
+            {
+                "id": 22010011,
+                "hpPercent": 33
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 54.336,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 50.24,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "绒翼龙武士·膛星之锤",
+        "route": "Qucusaurus Warrior: Heartstar Hammer",
+        "icon": "UI_MonsterIcon_Tribalwarrior_Powermaul_Flamingo"
+    },
+    "25510801": {
+        "id": 25510801,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": [
+            {
+                "id": 22010011,
+                "hpPercent": 66
+            },
+            {
+                "id": 22010011,
+                "hpPercent": 33
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 54.336,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 50.24,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "绒翼龙武士·长空明焰",
+        "route": "Qucusaurus Warrior: Blazing Sky",
+        "icon": "UI_MonsterIcon_Tribalwarrior_Slingshot_Flamingo"
+    },
+    "25510901": {
+        "id": 25510901,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": [
+            {
+                "id": 22010016,
+                "hpPercent": 66
+            },
+            {
+                "id": 22010016,
+                "hpPercent": 33
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 54.336,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.216,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "暝视龙武士·寒涌持者",
+        "route": "Iktomisaurus Warrior: Icy Tidebearer",
+        "icon": "UI_MonsterIcon_Tribalwarrior_Chainsword_Shamansaurus"
+    },
+    "25510902": {
+        "id": 25510902,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2灵视龙创生的头套人（wq）",
+                "description": "5.2灵视龙头套人创生死亡（wq）",
+                "abilityName": [
+                    "MonsterEliteAffix_Shamansaurus_CreateMonsterDieV52"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010016,
+                "hpPercent": 66
+            },
+            {
+                "id": 22010016,
+                "hpPercent": 33
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 54.336,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.216,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "暝视龙武士·寒涌持者",
+        "route": "Iktomisaurus Warrior: Icy Tidebearer",
+        "icon": "UI_MonsterIcon_Tribalwarrior_Chainsword_Shamansaurus"
+    },
+    "25511001": {
+        "id": 25511001,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": [
+            {
+                "id": 22010016,
+                "hpPercent": 66
+            },
+            {
+                "id": 22010016,
+                "hpPercent": 33
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 54.336,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.216,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "暝视龙武士·冰晶炮手",
+        "route": "Iktomisaurus Warrior: Cryocrystal Cannon",
+        "icon": "UI_MonsterIcon_Tribalwarrior_Launcher_Shamansaurus"
+    },
+    "25511002": {
+        "id": 25511002,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2灵视龙创生的头套人（wq）",
+                "description": "5.2灵视龙头套人创生死亡（wq）",
+                "abilityName": [
+                    "MonsterEliteAffix_Shamansaurus_CreateMonsterDieV52"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010016,
+                "hpPercent": 66
+            },
+            {
+                "id": 22010016,
+                "hpPercent": 33
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 54.336,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 45.216,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "暝视龙武士·冰晶炮手",
+        "route": "Iktomisaurus Warrior: Cryocrystal Cannon",
+        "icon": "UI_MonsterIcon_Tribalwarrior_Launcher_Shamansaurus"
     },
     "26010101": {
         "id": 26010101,
@@ -46853,6 +49043,194 @@
         "route": "Gluttonous Yumkasaur Mountain King",
         "icon": "UI_MonsterIcon_Natsaurus_Hookwalker_Primo"
     },
+    "26230101": {
+        "id": 26230101,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 14.9424,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 22.608,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.3,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "幼绒翼龙",
+        "route": "Qucusaurus Chick",
+        "icon": "UI_MonsterIcon_Natsaurus_Flamingo_Small"
+    },
+    "26230201": {
+        "id": 26230201,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": [
+            {
+                "id": 22010011,
+                "hpPercent": 66
+            },
+            {
+                "id": 22010011,
+                "hpPercent": 33
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 40.752,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.68,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.5,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "绒翼龙",
+        "route": "Qucusaurus",
+        "icon": "UI_MonsterIcon_Natsaurus_Flamingo_Normal"
+    },
+    "26230202": {
+        "id": 26230202,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": [
+            {
+                "id": 22010011,
+                "hpPercent": 66
+            },
+            {
+                "id": 22010011,
+                "hpPercent": 33
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 40.752,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.68,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.5,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "绒翼龙",
+        "route": "Qucusaurus",
+        "icon": "UI_MonsterIcon_Natsaurus_Flamingo_Normal"
+    },
+    "26230204": {
+        "id": 26230204,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "翼手龙-常规-远景版迁徙",
+                "description": "翼手龙-常规-远景版迁徙",
+                "abilityName": [
+                    "Monster_Natsaurus_Flamingo_Normal_Migrate_DistantView"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010011,
+                "hpPercent": 66
+            },
+            {
+                "id": 22010011,
+                "hpPercent": 33
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 40.752,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.68,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.5,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "绒翼龙",
+        "route": "Qucusaurus",
+        "icon": "UI_MonsterIcon_Natsaurus_Flamingo_Normal"
+    },
     "26230301": {
         "id": 26230301,
         "type": "MONSTER_BOSS",
@@ -47061,6 +49439,176 @@
         "name": "金焰绒翼龙暴君",
         "route": "Goldflame Qucusaur Tyrant",
         "icon": "UI_MonsterIcon_Natsaurus_Flamingo_Primo"
+    },
+    "26240101": {
+        "id": 26240101,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 13.584,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 20.096,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.3,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "幼暝视龙",
+        "route": "Iktomisaurus Chick",
+        "icon": "UI_MonsterIcon_Natsaurus_Shamansaurus_Small"
+    },
+    "26240102": {
+        "id": 26240102,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 13.584,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 20.096,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.3,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "幼暝视龙",
+        "route": "Iktomisaurus Chick",
+        "icon": "UI_MonsterIcon_Natsaurus_Shamansaurus_Small"
+    },
+    "26240201": {
+        "id": 26240201,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": [
+            {
+                "id": 22010016,
+                "hpPercent": 66
+            },
+            {
+                "id": 22010016,
+                "hpPercent": 33
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 36.6768,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 33.912,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.5,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "暝视龙",
+        "route": "Iktomisaurus",
+        "icon": "UI_MonsterIcon_Natsaurus_Shamansaurus_Normal"
+    },
+    "26240202": {
+        "id": 26240202,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": [
+            {
+                "id": 22010016,
+                "hpPercent": 66
+            },
+            {
+                "id": 22010016,
+                "hpPercent": 33
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 36.6768,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 33.912,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.5,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "暝视龙",
+        "route": "Iktomisaurus",
+        "icon": "UI_MonsterIcon_Natsaurus_Shamansaurus_Normal"
     },
     "26260101": {
         "id": 26260101,
@@ -47523,6 +50071,196 @@
         "name": "疾叶·大灵显化身",
         "route": "Foliar-Swift Wayob Manifestation",
         "icon": "UI_MonsterIcon_Wayob_Hookwalker"
+    },
+    "26260801": {
+        "id": 26260801,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": [
+            {
+                "id": 22010016,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 95.088,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 57.776,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.5,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "凛冽·大灵显化身",
+        "route": "Biting-Cold Wayob Manifestation",
+        "icon": "UI_MonsterIcon_Wayob_Shamansaurus"
+    },
+    "26260803": {
+        "id": 26260803,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.0大灵开场力场词缀",
+                "description": "5.0大灵开场力场词缀",
+                "abilityName": [
+                    "MonsterAffix_Wayob_GoFirstField"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010016,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 95.088,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 57.776,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.5,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "凛冽·大灵显化身",
+        "route": "Biting-Cold Wayob Manifestation",
+        "icon": "UI_MonsterIcon_Wayob_Shamansaurus"
+    },
+    "26260901": {
+        "id": 26260901,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": [
+            {
+                "id": 22010011,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 95.088,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 57.776,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.5,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "焚燃·大灵显化身",
+        "route": "Burning-Aflame Wayob Manifestation",
+        "icon": "UI_MonsterIcon_Wayob_Flamingo"
+    },
+    "26260902": {
+        "id": 26260902,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.0大灵开场力场词缀",
+                "description": "5.0大灵开场力场词缀",
+                "abilityName": [
+                    "MonsterAffix_Wayob_GoFirstField"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010011,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 95.088,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 57.776,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.5,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "焚燃·大灵显化身",
+        "route": "Burning-Aflame Wayob Manifestation",
+        "icon": "UI_MonsterIcon_Wayob_Flamingo"
     },
     "26270101": {
         "id": 26270101,

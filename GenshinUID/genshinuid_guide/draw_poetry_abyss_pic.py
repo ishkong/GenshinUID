@@ -169,7 +169,7 @@ async def draw_poetry_abyss_image():
                     (219, 209, 203),
                 )
                 ming_draw = ImageDraw.Draw(mimg)
-
+                monster_img = monster_img.convert('RGBA')
                 mimg.paste(monster_img, (0, 0), monster_img)
                 ming_draw.text(
                     (100, 30),

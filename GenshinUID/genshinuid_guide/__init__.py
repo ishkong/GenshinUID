@@ -4,6 +4,7 @@ from typing import List
 from gsuid_core.sv import SV
 from gsuid_core.bot import Bot
 from gsuid_core.models import Event
+from gsuid_core.logger import logger
 from gsuid_core.message_models import Button
 from gsuid_core.segment import MessageSegment
 
@@ -16,9 +17,11 @@ from .get_new_abyss_data import get_review_data
 from ..utils.resource.RESOURCE_PATH import REF_PATH
 from .get_bbs_post_guide import get_material_way_post
 from ..utils.map.name_covert import alias_to_char_name
+from .draw_poetry_abyss_pic import draw_poetry_abyss_image
 
 sv_char_guide = SV('查询角色攻略')
 sv_abyss_review = SV('查询深渊阵容')
+sv_poetry_abyss_review = SV('查询剧诗深渊阵容')
 sv_bbs_post_guide = SV('查询BBS攻略')
 
 
@@ -57,6 +60,13 @@ async def send_bluekun_pic(bot: Bot, ev: Event):
         await bot.logger.warning('未找到{}参考面板图片'.format(name))
 
 
+@sv_poetry_abyss_review.on_command(('剧诗版本深渊', '剧诗深渊阵容'))
+async def send_poetry_abyss_review(bot: Bot, ev: Event):
+    im = await draw_poetry_abyss_image()
+    logger.info('[剧诗版本深渊] 获得深渊信息成功！')
+    await bot.send(im)
+
+
 @sv_abyss_review.on_command(('版本深渊', '深渊阵容', '深渊怪物'))
 async def send_abyss_review(bot: Bot, ev: Event):
     floor = '12'
@@ -88,7 +98,7 @@ async def send_abyss_review(bot: Bot, ev: Event):
         d = Button(f'♾️版本深渊{adv_version}', f'深渊概览{adv_version}')
         await bot.send_option(im, [c, d])
     elif isinstance(im, List):
-        mes = [MessageSegment.text(str(msg)) for msg in im]
+        mes = [MessageSegment.text(str(msg)) for msg in im]  # type: ignore
         await bot.send(MessageSegment.node(mes))
     elif isinstance(im, str):
         await bot.send(im)

@@ -508,6 +508,14 @@
         "need_admin": false
       },
       {
+        "name": "剧诗版本深渊",
+        "desc": "获取当前版本剧诗深渊阵容",
+        "eg": "剧诗版本深渊",
+        "need_ck": false,
+        "need_sk": false,
+        "need_admin": false
+      },
+      {
         "name": "查成就",
         "desc": "查询这个成就的攻略",
         "eg": "查成就捉猫记",

@@ -1,6 +1,8 @@
 import re
+import json
 from typing import List, Union, Optional, TypedDict, cast
 
+import aiofiles
 from gsuid_core.utils.api.minigg.models import CharacterTalents
 from gsuid_core.utils.api.ambr.request import (
     get_ambr_char_data,
@@ -8,6 +10,7 @@ from gsuid_core.utils.api.ambr.request import (
 )
 
 from .map.grow_curve import GROW_CURVE_LIST, WEAPON_GROW_CURVE
+from ..utils.resource.RESOURCE_PATH import CHAR_DATA_PATH, WEAPON_DATA_PATH
 
 PROP_MAP = {
     'FIGHT_PROP_BASE_HP': '基础生命值',
@@ -111,12 +114,73 @@ class ConvertCharacter(TypedDict):
     defense: float
 
 
+async def convert_exist_data_to_char(
+    char_id: Union[str, int]
+) -> ConvertCharacter:
+    path = CHAR_DATA_PATH / f'{char_id}.json'
+    if path.exists():
+        async with aiofiles.open(path, 'r', encoding='utf-8') as f:
+            raw_data = json.loads(await f.read())
+    else:
+        raw_data = await get_ambr_char_data(char_id)
+        if raw_data is None:
+            raise Exception('[AmbrData] 未找到该角色/数据无法下载!')
+        # 保存
+        async with aiofiles.open(path, 'w', encoding='utf-8') as f:
+            await f.write(json.dumps(raw_data))
+
+    result = {
+        'name': raw_data['name'],
+        'title': raw_data['fetter']['title'],
+        'rarity': raw_data['rank'],
+        'weapontype': WEAPON_TYPE[raw_data['weaponType']],
+        'elementText': ELEMENT_MAP[raw_data['element']],
+        'element': ELEMENT_MAP[raw_data['element']],
+        'images': {'namesideicon': raw_data['icon']},  # 暂时适配
+        'substatText': PROP_MAP[
+            list(raw_data['upgrade']['promote'][-1]['addProps'].keys())[-1]
+        ],
+        'hp': raw_data['upgrade']['prop'][0]['initValue']
+        * GROW_CURVE_LIST[89]['curveInfos'][
+            TYPE_TO_INT[raw_data['upgrade']['prop'][0]['type']]
+        ]['value']
+        + raw_data['upgrade']['promote'][-1]['addProps']['FIGHT_PROP_BASE_HP'],
+        'attack': raw_data['upgrade']['prop'][1]['initValue']
+        * GROW_CURVE_LIST[89]['curveInfos'][
+            TYPE_TO_INT[raw_data['upgrade']['prop'][1]['type']]
+        ]['value']
+        + raw_data['upgrade']['promote'][-1]['addProps'][
+            'FIGHT_PROP_BASE_ATTACK'
+        ],
+        'defense': raw_data['upgrade']['prop'][2]['initValue']
+        * GROW_CURVE_LIST[89]['curveInfos'][
+            TYPE_TO_INT[raw_data['upgrade']['prop'][2]['type']]
+        ]['value']
+        + raw_data['upgrade']['promote'][-1]['addProps'][
+            'FIGHT_PROP_BASE_DEFENSE'
+        ],
+        'specialized': raw_data['upgrade']['promote'][-1]['addProps'][
+            list(raw_data['upgrade']['promote'][-1]['addProps'].keys())[-1]
+        ],
+    }
+    return cast(ConvertCharacter, result)
+
+
 async def convert_ambr_to_weapon(
     weapon_id: Union[int, str]
 ) -> Optional[ConvertWeapon]:
-    raw_data = await get_ambr_weapon_data(weapon_id)
-    if raw_data is None:
-        return None
+    path = WEAPON_DATA_PATH / f'{weapon_id}.json'
+    if path.exists():
+        async with aiofiles.open(path, 'r', encoding='utf-8') as f:
+            raw_data = json.loads(await f.read())
+    else:
+        raw_data = await get_ambr_weapon_data(weapon_id)
+        if raw_data is None:
+            raise Exception('[AmbrData] 未找到该武器/数据无法下载!')
+        # 保存
+        async with aiofiles.open(path, 'w', encoding='utf-8') as f:
+            await f.write(json.dumps(raw_data))
+
     if raw_data['affix'] is None:
         effect = {
             'name': '无特效',
@@ -176,44 +240,7 @@ async def convert_ambr_to_weapon(
 async def convert_ambr_to_minigg(
     char_id: Union[str, int]
 ) -> Optional[ConvertCharacter]:
-    raw_data = await get_ambr_char_data(char_id)
-    if raw_data is None:
-        return
-    result = {
-        'name': raw_data['name'],
-        'title': raw_data['fetter']['title'],
-        'rarity': raw_data['rank'],
-        'weapontype': WEAPON_TYPE[raw_data['weaponType']],
-        'elementText': ELEMENT_MAP[raw_data['element']],
-        'element': ELEMENT_MAP[raw_data['element']],
-        'images': {'namesideicon': raw_data['icon']},  # 暂时适配
-        'substatText': PROP_MAP[
-            list(raw_data['upgrade']['promote'][-1]['addProps'].keys())[-1]
-        ],
-        'hp': raw_data['upgrade']['prop'][0]['initValue']
-        * GROW_CURVE_LIST[89]['curveInfos'][
-            TYPE_TO_INT[raw_data['upgrade']['prop'][0]['type']]
-        ]['value']
-        + raw_data['upgrade']['promote'][-1]['addProps']['FIGHT_PROP_BASE_HP'],
-        'attack': raw_data['upgrade']['prop'][1]['initValue']
-        * GROW_CURVE_LIST[89]['curveInfos'][
-            TYPE_TO_INT[raw_data['upgrade']['prop'][1]['type']]
-        ]['value']
-        + raw_data['upgrade']['promote'][-1]['addProps'][
-            'FIGHT_PROP_BASE_ATTACK'
-        ],
-        'defense': raw_data['upgrade']['prop'][2]['initValue']
-        * GROW_CURVE_LIST[89]['curveInfos'][
-            TYPE_TO_INT[raw_data['upgrade']['prop'][2]['type']]
-        ]['value']
-        + raw_data['upgrade']['promote'][-1]['addProps'][
-            'FIGHT_PROP_BASE_DEFENSE'
-        ],
-        'specialized': raw_data['upgrade']['promote'][-1]['addProps'][
-            list(raw_data['upgrade']['promote'][-1]['addProps'].keys())[-1]
-        ],
-    }
-    return cast(ConvertCharacter, result)
+    return await convert_exist_data_to_char(char_id)
 
 
 async def convert_ambr_to_talent(

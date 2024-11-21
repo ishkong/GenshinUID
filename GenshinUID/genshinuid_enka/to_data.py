@@ -6,11 +6,10 @@ from copy import deepcopy
 from typing import Dict, List, Union, Literal, Optional
 
 import aiofiles
-from httpx import ReadTimeout, ConnectTimeout
+from httpx import ReadTimeout
 from gsuid_core.utils.error_reply import UID_HINT
 from gsuid_core.utils.api.enka.models import EnkaData
 from gsuid_core.utils.api.enka.request import get_enka_info
-from gsuid_core.utils.api.minigg.request import get_weapon_info
 
 from .mono.Character import Character
 from ..utils.api.cv.request import _CvApi
@@ -30,6 +29,9 @@ from ..utils.map.GS_MAP_PATH import (
     artifactId2Piece,
     avatarName2Element,
 )
+
+# from gsuid_core.utils.api.minigg.request import get_weapon_info
+
 
 PROP_ATTR_MAP = {
     'Anemo': '44',
@@ -316,10 +318,12 @@ async def enka_to_dict(
             weapon_info['weaponStats'].append(weapon_prop_temp)
 
         # 武器特效，须请求API
+        '''
         try:
             effect_raw = await get_weapon_info(weapon_info['weaponName'])
-        except ConnectTimeout:
-            effect_raw = await convert_ambr_to_weapon(weapon_info['itemId'])
+        except:  # noqa
+        '''
+        effect_raw = await convert_ambr_to_weapon(weapon_info['itemId'])
 
         if (
             not isinstance(effect_raw, List)

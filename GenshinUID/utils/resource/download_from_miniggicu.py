@@ -7,9 +7,11 @@ from .RESOURCE_PATH import (
     ICON_PATH,
     GUIDE_PATH,
     WEAPON_PATH,
+    CHAR_DATA_PATH,
     CHAR_SIDE_PATH,
     GACHA_IMG_PATH,
     CHAR_STAND_PATH,
+    WEAPON_DATA_PATH,
     CHAR_NAMECARD_PATH,
     CHAR_NAMECARDPIC_PATH,
 )
@@ -27,12 +29,10 @@ async def download_all_file_from_miniggicu():
             'resource/icon': ICON_PATH,
             'resource/reliquaries': REL_PATH,
             'resource/weapon': WEAPON_PATH,
+            'resource/char_data': CHAR_DATA_PATH,
+            'resource/weapon_data': WEAPON_DATA_PATH,
             'wiki/guide': GUIDE_PATH,
             'wiki/ref': REF_PATH,
             'resource/char_namecard_pic': CHAR_NAMECARDPIC_PATH,
         },
     )
-    for d_files in ['100000067.png', '100000068.png']:
-        path = CHAR_PATH / d_files
-        if path.exists():
-            path.unlink()

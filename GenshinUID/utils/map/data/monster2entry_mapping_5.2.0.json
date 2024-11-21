@@ -348,6 +348,61 @@
         "route": "Anemo Slime",
         "icon": "UI_MonsterIcon_Slime_Wind_02"
     },
+    "20010303": {
+        "id": 20010303,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "5.2冒险家试炼特殊史莱姆",
+                "description": "5.2冒险家试炼特殊史莱姆",
+                "abilityName": [
+                    "MonsterAffix_Slime_SimpleStick_V5_2_AdventurerTrial"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 10.8672,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 15.072,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "风史莱姆",
+        "route": "Anemo Slime",
+        "icon": "UI_MonsterIcon_Slime_Wind_02"
+    },
     "20010401": {
         "id": 20010401,
         "type": "MONSTER_ORDINARY",
@@ -513,6 +568,61 @@
                 "hpPercent": 33
             }
         ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 27.168,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 35.168,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "大型风史莱姆",
+        "route": "Large Anemo Slime",
+        "icon": "UI_MonsterIcon_Slime_Wind_03"
+    },
+    "20010404": {
+        "id": 20010404,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "5.2冒险家试炼特殊大史莱姆",
+                "description": "5.2冒险家试炼特殊大史莱姆",
+                "abilityName": [
+                    "MonsterAffix_Slime_Large_SimpleStick_V5_2_AdventurerTrial"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
         "prop": [
             {
                 "propType": "FIGHT_PROP_BASE_HP",
@@ -811,6 +921,85 @@
         "route": "Electro Slime",
         "icon": "UI_MonsterIcon_Slime_Electric_02"
     },
+    "20010505": {
+        "id": 20010505,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "感电免疫",
+                "description": "免疫感电伤害和效果",
+                "abilityName": [
+                    "MonsterAffix_ShockResist"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 10.8672,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 7.536,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "雷史莱姆",
+        "route": "Electro Slime",
+        "icon": "UI_MonsterIcon_Slime_Electric_02"
+    },
     "20010590": {
         "id": 20010590,
         "type": "MONSTER_ORDINARY",
@@ -843,6 +1032,61 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 26.8,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "雷史莱姆",
+        "route": "Electro Slime",
+        "icon": "UI_MonsterIcon_Slime_Electric_02"
+    },
+    "20010591": {
+        "id": 20010591,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "感电免疫",
+                "description": "免疫感电伤害和效果",
+                "abilityName": [
+                    "MonsterAffix_ShockResist"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 25.5,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 20.4,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -948,6 +1192,85 @@
     },
     "20010602": {
         "id": 20010602,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "感电免疫",
+                "description": "免疫感电伤害和效果",
+                "abilityName": [
+                    "MonsterAffix_ShockResist"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 27.168,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 52.752,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "大型雷史莱姆",
+        "route": "Large Electro Slime",
+        "icon": "UI_MonsterIcon_Slime_Electric_03"
+    },
+    "20010603": {
+        "id": 20010603,
         "type": "MONSTER_ORDINARY",
         "affix": [
             {
@@ -1422,6 +1745,140 @@
         "route": "Mutant Electro Slime",
         "icon": "UI_MonsterIcon_Slime_Electric_03_Positive"
     },
+    "20010704": {
+        "id": 20010704,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "感电免疫",
+                "description": "免疫感电伤害和效果",
+                "abilityName": [
+                    "MonsterAffix_ShockResist"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 27.168,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 52.752,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "变异雷史莱姆",
+        "route": "Mutant Electro Slime",
+        "icon": "UI_MonsterIcon_Slime_Electric_03_Positive"
+    },
+    "20010791": {
+        "id": 20010791,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "感电免疫",
+                "description": "免疫感电伤害和效果",
+                "abilityName": [
+                    "MonsterAffix_ShockResist"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 44.625,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 34.425,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "变异雷史莱姆",
+        "route": "Mutant Electro Slime",
+        "icon": "UI_MonsterIcon_Slime_Electric_03_Positive"
+    },
     "20010801": {
         "id": 20010801,
         "type": "MONSTER_ORDINARY",
@@ -1638,6 +2095,140 @@
                 "description": "免疫冰冻和寒元素的减速效果",
                 "abilityName": [
                     "MonsterAffix_IceAllResist"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 10.8672,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 7.536,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "冰史莱姆",
+        "route": "Cryo Slime",
+        "icon": "UI_MonsterIcon_Slime_Ice_02"
+    },
+    "20010805": {
+        "id": 20010805,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "寒气免疫",
+                "description": "免疫冰冻和寒元素的减速效果",
+                "abilityName": [
+                    "MonsterAffix_IceAllResist"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 25.5,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 20.4,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "冰史莱姆",
+        "route": "Cryo Slime",
+        "icon": "UI_MonsterIcon_Slime_Ice_02"
+    },
+    "20010806": {
+        "id": 20010806,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "寒气免疫",
+                "description": "免疫冰冻和寒元素的减速效果",
+                "abilityName": [
+                    "MonsterAffix_IceAllResist"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
                 ],
                 "isCommon": null
             }
@@ -2073,6 +2664,61 @@
         "route": "Large Cryo Slime",
         "icon": "UI_MonsterIcon_Slime_Ice_03"
     },
+    "20010991": {
+        "id": 20010991,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "寒气免疫",
+                "description": "免疫冰冻和寒元素的减速效果",
+                "abilityName": [
+                    "MonsterAffix_IceAllResist"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 18.36,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 31.875,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "大型冰史莱姆",
+        "route": "Large Cryo Slime",
+        "icon": "UI_MonsterIcon_Slime_Ice_03"
+    },
     "20011001": {
         "id": 20011001,
         "type": "MONSTER_ORDINARY",
@@ -2188,6 +2834,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 7.536,
                 "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "水史莱姆",
+        "route": "Hydro Slime",
+        "icon": "UI_MonsterIcon_Slime_Water_02"
+    },
+    "20011090": {
+        "id": 20011090,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 25.5,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 20.4,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -2386,6 +3079,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 35.168,
                 "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "大型水史莱姆",
+        "route": "Large Hydro Slime",
+        "icon": "UI_MonsterIcon_Slime_Water_03"
+    },
+    "20011191": {
+        "id": 20011191,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 28.05,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 44.625,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -2748,6 +3488,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 22.3,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "火史莱姆",
+        "route": "Pyro Slime",
+        "icon": "UI_MonsterIcon_Slime_Fire_02"
+    },
+    "20011291": {
+        "id": 20011291,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 25.5,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 19.125,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -3494,6 +4281,61 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 62.8,
                 "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "狂风之核",
+        "route": "Eye of the Storm",
+        "icon": "UI_MonsterIcon_Elemental_Wind_01"
+    },
+    "20020191": {
+        "id": 20020191,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "风抗-100%",
+                "description": "同系伤害抵抗-风-100%",
+                "abilityName": [
+                    "MonsterAffix_ElementResist_Wind_03"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 51.255,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 87.21,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -5946,6 +6788,53 @@
         "route": "Cryo Specter",
         "icon": "UI_MonsterIcon_Sylph_Ice_01"
     },
+    "20060491": {
+        "id": 20060491,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 28.05,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 63.75,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "冰飘浮灵",
+        "route": "Cryo Specter",
+        "icon": "UI_MonsterIcon_Sylph_Ice_01"
+    },
     "20060501": {
         "id": 20060501,
         "type": "MONSTER_ORDINARY",
@@ -5966,6 +6855,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 35.168,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "雷飘浮灵",
+        "route": "Electro Specter",
+        "icon": "UI_MonsterIcon_Sylph_Electric_01"
+    },
+    "20060591": {
+        "id": 20060591,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 28.05,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 63.75,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -6056,6 +6992,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 53.6,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "火飘浮灵",
+        "route": "Pyro Specter",
+        "icon": "UI_MonsterIcon_Sylph_Fire_01"
+    },
+    "20060691": {
+        "id": 20060691,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 28.05,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 63.75,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -6603,6 +7586,77 @@
         "route": "Hilichurl",
         "icon": "UI_MonsterIcon_Hili_None_01"
     },
+    "21010106": {
+        "id": 21010106,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 13.584,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 22.608,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "丘丘人",
+        "route": "Hilichurl",
+        "icon": "UI_MonsterIcon_Hili_None_01"
+    },
     "21010201": {
         "id": 21010201,
         "type": "MONSTER_ORDINARY",
@@ -6755,6 +7809,53 @@
         "route": "Hilichurl Fighter",
         "icon": "UI_MonsterIcon_Hili_None_01"
     },
+    "21010291": {
+        "id": 21010291,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 7.0125,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 39.015,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "打手丘丘人",
+        "route": "Hilichurl Fighter",
+        "icon": "UI_MonsterIcon_Hili_None_01"
+    },
     "21010299": {
         "id": 21010299,
         "type": "MONSTER_ORDINARY",
@@ -6862,6 +7963,85 @@
     },
     "21010302": {
         "id": 21010302,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "塔防丘丘格挡判断词缀",
+                "description": "塔防丘丘格挡判断词缀",
+                "abilityName": [
+                    "Monster_Hili_Defend_Affix_NoCombat"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 13.584,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 22.608,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "木盾丘丘人",
+        "route": "Wooden Shield Hilichurl Guard",
+        "icon": "UI_MonsterIcon_Hili_None_01"
+    },
+    "21010303": {
+        "id": 21010303,
         "type": "MONSTER_ORDINARY",
         "affix": [
             {
@@ -7335,6 +8515,61 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 16.956,
                 "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "火箭丘丘人",
+        "route": "Pyro Hilichurl Shooter",
+        "icon": "UI_MonsterIcon_Hili_Fire_Range"
+    },
+    "21010591": {
+        "id": 21010591,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "点燃免疫",
+                "description": "免疫点燃伤害",
+                "abilityName": [
+                    "MonsterAffix_BurningResist"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 16.575,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 30.6,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -7833,6 +9068,53 @@
         "route": "Cryo Hilichurl Shooter",
         "icon": "UI_MonsterIcon_Hili_Ice_Range"
     },
+    "21010991": {
+        "id": 21010991,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 16.575,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 30.6,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "冰箭丘丘人",
+        "route": "Cryo Hilichurl Shooter",
+        "icon": "UI_MonsterIcon_Hili_Ice_Range"
+    },
     "21011001": {
         "id": 21011001,
         "type": "MONSTER_ORDINARY",
@@ -7994,6 +9276,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 26.8,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "雷箭丘丘人",
+        "route": "Electro Hilichurl Shooter",
+        "icon": "UI_MonsterIcon_Hili_Electric_Range"
+    },
+    "21011091": {
+        "id": 21011091,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 16.575,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 30.6,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -8851,6 +10180,77 @@
         "route": "Wooden Shieldwall Mitachurl",
         "icon": "UI_MonsterIcon_Brute_None_01"
     },
+    "21020103": {
+        "id": 21020103,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 40.752,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 30.144,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.3
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "木盾丘丘暴徒",
+        "route": "Wooden Shieldwall Mitachurl",
+        "icon": "UI_MonsterIcon_Brute_None_01"
+    },
     "21020201": {
         "id": 21020201,
         "type": "MONSTER_ORDINARY",
@@ -9195,6 +10595,85 @@
         "route": "Blazing Axe Mitachurl",
         "icon": "UI_MonsterIcon_Brute_None_01"
     },
+    "21020205": {
+        "id": 21020205,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "点燃免疫",
+                "description": "免疫点燃伤害",
+                "abilityName": [
+                    "MonsterAffix_BurningResist"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 27.168,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 52.752,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "火斧丘丘暴徒",
+        "route": "Blazing Axe Mitachurl",
+        "icon": "UI_MonsterIcon_Brute_None_01"
+    },
     "21020290": {
         "id": 21020290,
         "type": "MONSTER_ORDINARY",
@@ -9219,6 +10698,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 53.6,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "火斧丘丘暴徒",
+        "route": "Blazing Axe Mitachurl",
+        "icon": "UI_MonsterIcon_Brute_None_01"
+    },
+    "21020291": {
+        "id": 21020291,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 65.025,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 70.125,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -9688,6 +11214,132 @@
             "iceSubHurt": 0.7,
             "rockSubHurt": 0.1,
             "physicalSubHurt": 0.5
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "丘丘霜铠王",
+        "route": "Frostarm Lawachurl",
+        "icon": "UI_MonsterIcon_Brute_Ice_01"
+    },
+    "21020403": {
+        "id": 21020403,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "丘丘王非入战强化-塔防",
+                "description": "丘丘王非入战强化-塔防",
+                "abilityName": [
+                    "MonsterAffix_Brute_TowerDefence_PowerUp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 122.256,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 150.72,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.7,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.5
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "丘丘霜铠王",
+        "route": "Frostarm Lawachurl",
+        "icon": "UI_MonsterIcon_Brute_Ice_01"
+    },
+    "21020491": {
+        "id": 21020491,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 59.925,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 76.5,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
         },
         "fundamentalForce": null,
         "reward": null,
@@ -10321,6 +11973,124 @@
         "route": "Crackling Axe Mitachurl",
         "icon": "UI_MonsterIcon_Brute_None_01"
     },
+    "21020705": {
+        "id": 21020705,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 40.752,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 60.288,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.3
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "雷斧丘丘暴徒",
+        "route": "Crackling Axe Mitachurl",
+        "icon": "UI_MonsterIcon_Brute_None_01"
+    },
+    "21020791": {
+        "id": 21020791,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 65.025,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 70.125,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "雷斧丘丘暴徒",
+        "route": "Crackling Axe Mitachurl",
+        "icon": "UI_MonsterIcon_Brute_None_01"
+    },
     "21020801": {
         "id": 21020801,
         "type": "MONSTER_ORDINARY",
@@ -10374,6 +12144,85 @@
     },
     "21020802": {
         "id": 21020802,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "丘丘王非入战强化-塔防",
+                "description": "丘丘王非入战强化-塔防",
+                "abilityName": [
+                    "MonsterAffix_Brute_TowerDefence_PowerUp"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 122.256,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 150.72,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.7,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.5
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "丘丘雷兜王",
+        "route": "Thunderhelm Lawachurl",
+        "icon": "UI_MonsterIcon_Brute_Electric_01"
+    },
+    "21020803": {
+        "id": 21020803,
         "type": "MONSTER_ORDINARY",
         "affix": [
             {
@@ -10726,6 +12575,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 55.8,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "水丘丘萨满",
+        "route": "Hydro Samachurl",
+        "icon": "UI_MonsterIcon_Shaman_Water_01"
+    },
+    "21030191": {
+        "id": 21030191,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 17.85,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 49.725,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -11207,6 +13103,53 @@
             "waterSubHurt": 0.1,
             "elecSubHurt": 0.1,
             "windSubHurt": 0.5,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "风丘丘萨满",
+        "route": "Anemo Samachurl",
+        "icon": "UI_MonsterIcon_Shaman_Wind_01"
+    },
+    "21030391": {
+        "id": 21030391,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 13.26,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 53.55,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
             "iceSubHurt": 0.1,
             "rockSubHurt": 0.1,
             "physicalSubHurt": 0.1
@@ -11967,6 +13910,53 @@
         "route": "Hydro Hilichurl Rogue",
         "icon": "UI_MonsterIcon_Hilistray_Water"
     },
+    "21040291": {
+        "id": 21040291,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 85.935,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 109.65,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "丘丘水行游侠",
+        "route": "Hydro Hilichurl Rogue",
+        "icon": "UI_MonsterIcon_Hilistray_Water"
+    },
     "22010101": {
         "id": 22010101,
         "type": "MONSTER_ORDINARY",
@@ -12458,19 +14448,19 @@
                 "name": "地脉的旧枝",
                 "rank": 2,
                 "icon": "UI_ItemIcon_112020",
-                "count": "2.2324"
+                "count": "2.6263"
             },
             "112021": {
                 "name": "地脉的枯叶",
                 "rank": 3,
                 "icon": "UI_ItemIcon_112021",
-                "count": "0.5953"
+                "count": "0.7003"
             },
             "112022": {
                 "name": "地脉的新芽",
                 "rank": 4,
                 "icon": "UI_ItemIcon_112022",
-                "count": "0.1487"
+                "count": "0.1751"
             },
             "400022": {
                 "name": "战狂",
@@ -12734,6 +14724,93 @@
     },
     "22010205": {
         "id": 22010205,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "元素盾含量强化高",
+                "description": "提升单体元素盾含量100%",
+                "abilityName": [
+                    "MonsterAffix_ElementShield_DurabilityImprove_03"
+                ],
+                "isCommon": true
+            },
+            {
+                "name": "寒气免疫",
+                "description": "免疫冰冻和寒元素的减速效果",
+                "abilityName": [
+                    "MonsterAffix_IceAllResist"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 27.168,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.68,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "冰深渊法师",
+        "route": "Cryo Abyss Mage",
+        "icon": "UI_MonsterIcon_Abyss_Ice_01"
+    },
+    "22010207": {
+        "id": 22010207,
         "type": "MONSTER_ORDINARY",
         "affix": [
             {
@@ -13429,6 +15506,85 @@
                 "hpPercent": 25
             }
         ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 27.168,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 47.1,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "雷深渊法师",
+        "route": "Electro Abyss Mage",
+        "icon": "UI_MonsterIcon_Abyss_Electric_01"
+    },
+    "22010405": {
+        "id": 22010405,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "元素盾含量强化高",
+                "description": "提升单体元素盾含量100%",
+                "abilityName": [
+                    "MonsterAffix_ElementShield_DurabilityImprove_03"
+                ],
+                "isCommon": true
+            },
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
         "prop": [
             {
                 "propType": "FIGHT_PROP_BASE_HP",
@@ -18311,7 +20467,66 @@
             "physicalSubHurt": 0.1
         },
         "fundamentalForce": null,
-        "reward": null,
+        "reward": {
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "112116": {
+                "name": "折光的胚芽",
+                "rank": 2,
+                "icon": "UI_ItemIcon_112116",
+                "count": "3.9394"
+            },
+            "112117": {
+                "name": "惑光的阔叶",
+                "rank": 3,
+                "icon": "UI_ItemIcon_112117",
+                "count": "1.0505"
+            },
+            "112118": {
+                "name": "迷光的蜷叶之心",
+                "rank": 4,
+                "icon": "UI_ItemIcon_112118",
+                "count": "0.2626"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400042": {
+                "name": "流放者",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400043": {
+                "name": "流放者",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400062": {
+                "name": "游医",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10013_4"
+            }
+        },
         "name": "深邃拟覆叶",
         "route": "Tenebrous Mimiflora",
         "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
@@ -18371,7 +20586,66 @@
             "physicalSubHurt": 0.1
         },
         "fundamentalForce": null,
-        "reward": null,
+        "reward": {
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "112116": {
+                "name": "折光的胚芽",
+                "rank": 2,
+                "icon": "UI_ItemIcon_112116",
+                "count": "3.9394"
+            },
+            "112117": {
+                "name": "惑光的阔叶",
+                "rank": 3,
+                "icon": "UI_ItemIcon_112117",
+                "count": "1.0505"
+            },
+            "112118": {
+                "name": "迷光的蜷叶之心",
+                "rank": 4,
+                "icon": "UI_ItemIcon_112118",
+                "count": "0.2626"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400042": {
+                "name": "流放者",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400043": {
+                "name": "流放者",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400062": {
+                "name": "游医",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10013_4"
+            }
+        },
         "name": "深邃拟覆叶",
         "route": "Tenebrous Mimiflora",
         "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
@@ -18431,7 +20705,66 @@
             "physicalSubHurt": 0.1
         },
         "fundamentalForce": null,
-        "reward": null,
+        "reward": {
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "112116": {
+                "name": "折光的胚芽",
+                "rank": 2,
+                "icon": "UI_ItemIcon_112116",
+                "count": "3.9394"
+            },
+            "112117": {
+                "name": "惑光的阔叶",
+                "rank": 3,
+                "icon": "UI_ItemIcon_112117",
+                "count": "1.0505"
+            },
+            "112118": {
+                "name": "迷光的蜷叶之心",
+                "rank": 4,
+                "icon": "UI_ItemIcon_112118",
+                "count": "0.2626"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400042": {
+                "name": "流放者",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400043": {
+                "name": "流放者",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400062": {
+                "name": "游医",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10013_4"
+            }
+        },
         "name": "深邃拟覆叶",
         "route": "Tenebrous Mimiflora",
         "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
@@ -18491,7 +20824,66 @@
             "physicalSubHurt": 0.1
         },
         "fundamentalForce": null,
-        "reward": null,
+        "reward": {
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "112116": {
+                "name": "折光的胚芽",
+                "rank": 2,
+                "icon": "UI_ItemIcon_112116",
+                "count": "3.9394"
+            },
+            "112117": {
+                "name": "惑光的阔叶",
+                "rank": 3,
+                "icon": "UI_ItemIcon_112117",
+                "count": "1.0505"
+            },
+            "112118": {
+                "name": "迷光的蜷叶之心",
+                "rank": 4,
+                "icon": "UI_ItemIcon_112118",
+                "count": "0.2626"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400042": {
+                "name": "流放者",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400043": {
+                "name": "流放者",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400062": {
+                "name": "游医",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10013_4"
+            }
+        },
         "name": "深邃拟覆叶",
         "route": "Tenebrous Mimiflora",
         "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
@@ -18543,7 +20935,66 @@
             "physicalSubHurt": 0.1
         },
         "fundamentalForce": null,
-        "reward": null,
+        "reward": {
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "112116": {
+                "name": "折光的胚芽",
+                "rank": 2,
+                "icon": "UI_ItemIcon_112116",
+                "count": "3.9394"
+            },
+            "112117": {
+                "name": "惑光的阔叶",
+                "rank": 3,
+                "icon": "UI_ItemIcon_112117",
+                "count": "1.0505"
+            },
+            "112118": {
+                "name": "迷光的蜷叶之心",
+                "rank": 4,
+                "icon": "UI_ItemIcon_112118",
+                "count": "0.2626"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400042": {
+                "name": "流放者",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400043": {
+                "name": "流放者",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400062": {
+                "name": "游医",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10013_4"
+            }
+        },
         "name": "深邃拟覆叶",
         "route": "Tenebrous Mimiflora",
         "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
@@ -18595,7 +21046,66 @@
             "physicalSubHurt": 0.1
         },
         "fundamentalForce": null,
-        "reward": null,
+        "reward": {
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "112116": {
+                "name": "折光的胚芽",
+                "rank": 2,
+                "icon": "UI_ItemIcon_112116",
+                "count": "3.9394"
+            },
+            "112117": {
+                "name": "惑光的阔叶",
+                "rank": 3,
+                "icon": "UI_ItemIcon_112117",
+                "count": "1.0505"
+            },
+            "112118": {
+                "name": "迷光的蜷叶之心",
+                "rank": 4,
+                "icon": "UI_ItemIcon_112118",
+                "count": "0.2626"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400042": {
+                "name": "流放者",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400043": {
+                "name": "流放者",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400062": {
+                "name": "游医",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10013_4"
+            }
+        },
         "name": "深邃拟覆叶",
         "route": "Tenebrous Mimiflora",
         "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
@@ -18647,7 +21157,835 @@
             "physicalSubHurt": 0.1
         },
         "fundamentalForce": null,
+        "reward": {
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "112116": {
+                "name": "折光的胚芽",
+                "rank": 2,
+                "icon": "UI_ItemIcon_112116",
+                "count": "3.9394"
+            },
+            "112117": {
+                "name": "惑光的阔叶",
+                "rank": 3,
+                "icon": "UI_ItemIcon_112117",
+                "count": "1.0505"
+            },
+            "112118": {
+                "name": "迷光的蜷叶之心",
+                "rank": 4,
+                "icon": "UI_ItemIcon_112118",
+                "count": "0.2626"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400042": {
+                "name": "流放者",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400043": {
+                "name": "流放者",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400062": {
+                "name": "游医",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10013_4"
+            }
+        },
+        "name": "深邃拟覆叶",
+        "route": "Tenebrous Mimiflora",
+        "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
+    },
+    "22121001": {
+        "id": 22121001,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "怪物专用-次数盾标记-深渊次数盾",
+                "description": "所有怪物使用深渊次数盾必须挂载",
+                "abilityName": [
+                    "Monster_Common_FrequencyShieldLabel_AbyssShield"
+                ],
+                "isCommon": true
+            },
+            {
+                "name": "部落战士精英 - 语音移除",
+                "description": "任务按需求使用，避免穿帮",
+                "abilityName": [
+                    "Monster_TribalWarrior_NoVoAlter"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 46.1856,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.68,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": {
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "112116": {
+                "name": "折光的胚芽",
+                "rank": 2,
+                "icon": "UI_ItemIcon_112116",
+                "count": "3.9394"
+            },
+            "112117": {
+                "name": "惑光的阔叶",
+                "rank": 3,
+                "icon": "UI_ItemIcon_112117",
+                "count": "1.0505"
+            },
+            "112118": {
+                "name": "迷光的蜷叶之心",
+                "rank": 4,
+                "icon": "UI_ItemIcon_112118",
+                "count": "0.2626"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400042": {
+                "name": "流放者",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400043": {
+                "name": "流放者",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400062": {
+                "name": "游医",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10013_4"
+            }
+        },
+        "name": "深邃拟覆叶",
+        "route": "Tenebrous Mimiflora",
+        "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
+    },
+    "22121101": {
+        "id": 22121101,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "怪物专用-次数盾标记-深渊次数盾",
+                "description": "所有怪物使用深渊次数盾必须挂载",
+                "abilityName": [
+                    "Monster_Common_FrequencyShieldLabel_AbyssShield"
+                ],
+                "isCommon": true
+            },
+            {
+                "name": "部落战士精英 - 语音移除",
+                "description": "任务按需求使用，避免穿帮",
+                "abilityName": [
+                    "Monster_TribalWarrior_NoVoAlter"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 46.1856,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.68,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": {
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "112116": {
+                "name": "折光的胚芽",
+                "rank": 2,
+                "icon": "UI_ItemIcon_112116",
+                "count": "3.9394"
+            },
+            "112117": {
+                "name": "惑光的阔叶",
+                "rank": 3,
+                "icon": "UI_ItemIcon_112117",
+                "count": "1.0505"
+            },
+            "112118": {
+                "name": "迷光的蜷叶之心",
+                "rank": 4,
+                "icon": "UI_ItemIcon_112118",
+                "count": "0.2626"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400042": {
+                "name": "流放者",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400043": {
+                "name": "流放者",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400062": {
+                "name": "游医",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10013_4"
+            }
+        },
+        "name": "深邃拟覆叶",
+        "route": "Tenebrous Mimiflora",
+        "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
+    },
+    "22121201": {
+        "id": 22121201,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "怪物专用-次数盾标记-深渊次数盾",
+                "description": "所有怪物使用深渊次数盾必须挂载",
+                "abilityName": [
+                    "Monster_Common_FrequencyShieldLabel_AbyssShield"
+                ],
+                "isCommon": true
+            },
+            {
+                "name": "部落战士精英 - 语音移除",
+                "description": "任务按需求使用，避免穿帮",
+                "abilityName": [
+                    "Monster_TribalWarrior_NoVoAlter"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 46.1856,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.68,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": {
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "112116": {
+                "name": "折光的胚芽",
+                "rank": 2,
+                "icon": "UI_ItemIcon_112116",
+                "count": "3.9394"
+            },
+            "112117": {
+                "name": "惑光的阔叶",
+                "rank": 3,
+                "icon": "UI_ItemIcon_112117",
+                "count": "1.0505"
+            },
+            "112118": {
+                "name": "迷光的蜷叶之心",
+                "rank": 4,
+                "icon": "UI_ItemIcon_112118",
+                "count": "0.2626"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400042": {
+                "name": "流放者",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400043": {
+                "name": "流放者",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400062": {
+                "name": "游医",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10013_4"
+            }
+        },
+        "name": "深邃拟覆叶",
+        "route": "Tenebrous Mimiflora",
+        "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
+    },
+    "22121301": {
+        "id": 22121301,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "怪物专用-次数盾标记-深渊次数盾",
+                "description": "所有怪物使用深渊次数盾必须挂载",
+                "abilityName": [
+                    "Monster_Common_FrequencyShieldLabel_AbyssShield"
+                ],
+                "isCommon": true
+            },
+            {
+                "name": "部落战士精英 - 语音移除",
+                "description": "任务按需求使用，避免穿帮",
+                "abilityName": [
+                    "Monster_TribalWarrior_NoVoAlter"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 46.1856,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.68,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": {
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "112116": {
+                "name": "折光的胚芽",
+                "rank": 2,
+                "icon": "UI_ItemIcon_112116",
+                "count": "3.9394"
+            },
+            "112117": {
+                "name": "惑光的阔叶",
+                "rank": 3,
+                "icon": "UI_ItemIcon_112117",
+                "count": "1.0505"
+            },
+            "112118": {
+                "name": "迷光的蜷叶之心",
+                "rank": 4,
+                "icon": "UI_ItemIcon_112118",
+                "count": "0.2626"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400042": {
+                "name": "流放者",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400043": {
+                "name": "流放者",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400062": {
+                "name": "游医",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10013_4"
+            }
+        },
+        "name": "深邃拟覆叶",
+        "route": "Tenebrous Mimiflora",
+        "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
+    },
+    "22121302": {
+        "id": 22121302,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "怪物专用-次数盾标记-深渊次数盾",
+                "description": "所有怪物使用深渊次数盾必须挂载",
+                "abilityName": [
+                    "Monster_Common_FrequencyShieldLabel_AbyssShield"
+                ],
+                "isCommon": true
+            },
+            {
+                "name": "部落战士精英 - 语音移除",
+                "description": "任务按需求使用，避免穿帮",
+                "abilityName": [
+                    "Monster_TribalWarrior_NoVoAlter"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 81.504,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 47.1,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
         "reward": null,
+        "name": "深邃拟覆叶",
+        "route": "Tenebrous Mimiflora",
+        "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
+    },
+    "22121401": {
+        "id": 22121401,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "怪物专用-次数盾标记-深渊次数盾",
+                "description": "所有怪物使用深渊次数盾必须挂载",
+                "abilityName": [
+                    "Monster_Common_FrequencyShieldLabel_AbyssShield"
+                ],
+                "isCommon": true
+            },
+            {
+                "name": "部落战士精英 - 语音移除",
+                "description": "任务按需求使用，避免穿帮",
+                "abilityName": [
+                    "Monster_TribalWarrior_NoVoAlter"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 46.1856,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.68,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": {
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "112116": {
+                "name": "折光的胚芽",
+                "rank": 2,
+                "icon": "UI_ItemIcon_112116",
+                "count": "3.9394"
+            },
+            "112117": {
+                "name": "惑光的阔叶",
+                "rank": 3,
+                "icon": "UI_ItemIcon_112117",
+                "count": "1.0505"
+            },
+            "112118": {
+                "name": "迷光的蜷叶之心",
+                "rank": 4,
+                "icon": "UI_ItemIcon_112118",
+                "count": "0.2626"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400042": {
+                "name": "流放者",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400043": {
+                "name": "流放者",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400062": {
+                "name": "游医",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10013_4"
+            }
+        },
+        "name": "深邃拟覆叶",
+        "route": "Tenebrous Mimiflora",
+        "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
+    },
+    "22121501": {
+        "id": 22121501,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "怪物专用-次数盾标记-深渊次数盾",
+                "description": "所有怪物使用深渊次数盾必须挂载",
+                "abilityName": [
+                    "Monster_Common_FrequencyShieldLabel_AbyssShield"
+                ],
+                "isCommon": true
+            },
+            {
+                "name": "部落战士精英 - 语音移除",
+                "description": "任务按需求使用，避免穿帮",
+                "abilityName": [
+                    "Monster_TribalWarrior_NoVoAlter"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": [
+            {
+                "id": 22010010,
+                "hpPercent": 60
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 46.1856,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.68,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": {
+            "202": {
+                "name": "摩拉",
+                "rank": 3,
+                "icon": "UI_ItemIcon_202"
+            },
+            "112116": {
+                "name": "折光的胚芽",
+                "rank": 2,
+                "icon": "UI_ItemIcon_112116",
+                "count": "3.9394"
+            },
+            "112117": {
+                "name": "惑光的阔叶",
+                "rank": 3,
+                "icon": "UI_ItemIcon_112117",
+                "count": "1.0505"
+            },
+            "112118": {
+                "name": "迷光的蜷叶之心",
+                "rank": 4,
+                "icon": "UI_ItemIcon_112118",
+                "count": "0.2626"
+            },
+            "400022": {
+                "name": "战狂",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400023": {
+                "name": "战狂",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10005_4"
+            },
+            "400032": {
+                "name": "教官",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400033": {
+                "name": "教官",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10007_4"
+            },
+            "400042": {
+                "name": "流放者",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400043": {
+                "name": "流放者",
+                "rank": 4,
+                "icon": "UI_RelicIcon_10009_4"
+            },
+            "400062": {
+                "name": "游医",
+                "rank": 3,
+                "icon": "UI_RelicIcon_10013_4"
+            }
+        },
         "name": "深邃拟覆叶",
         "route": "Tenebrous Mimiflora",
         "icon": "UI_MonsterIcon_TheAbyss_Rhizome"
@@ -20034,19 +23372,19 @@
                 "name": "混沌装置",
                 "rank": 2,
                 "icon": "UI_ItemIcon_112023",
-                "count": "2.6263"
+                "count": "3.9394"
             },
             "112024": {
                 "name": "混沌回路",
                 "rank": 3,
                 "icon": "UI_ItemIcon_112024",
-                "count": "0.7003"
+                "count": "1.0505"
             },
             "112025": {
                 "name": "混沌炉心",
                 "rank": 4,
                 "icon": "UI_ItemIcon_112025",
-                "count": "0.1751"
+                "count": "0.2626"
             },
             "400022": {
                 "name": "战狂",
@@ -20090,6 +23428,77 @@
     },
     "24010102": {
         "id": 24010102,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 95.088,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 60.288,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.7
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "遗迹守卫",
+        "route": "Ruin Guard",
+        "icon": "UI_MonsterIcon_Defender_Noner_01"
+    },
+    "24010103": {
+        "id": 24010103,
         "type": "MONSTER_ORDINARY",
         "affix": [
             {
@@ -20259,6 +23668,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 44.6,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.5
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "遗迹守卫",
+        "route": "Ruin Guard",
+        "icon": "UI_MonsterIcon_Defender_Noner_01"
+    },
+    "24010191": {
+        "id": 24010191,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 136.425,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 37.485,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -20519,19 +23975,19 @@
                 "name": "混沌装置",
                 "rank": 2,
                 "icon": "UI_ItemIcon_112023",
-                "count": "2.6263"
+                "count": "3.9394"
             },
             "112024": {
                 "name": "混沌回路",
                 "rank": 3,
                 "icon": "UI_ItemIcon_112024",
-                "count": "0.7003"
+                "count": "1.0505"
             },
             "112025": {
                 "name": "混沌炉心",
                 "rank": 4,
                 "icon": "UI_ItemIcon_112025",
-                "count": "0.1751"
+                "count": "0.2626"
             },
             "400022": {
                 "name": "战狂",
@@ -20807,6 +24263,77 @@
                 "hpPercent": 25
             }
         ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 122.256,
+                "type": "GROW_CURVE_HP"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 87.92,
+                "type": "GROW_CURVE_ATTACK"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.7
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "遗迹重机",
+        "route": "Ruin Grader",
+        "icon": "UI_MonsterIcon_Konungmathr"
+    },
+    "24010306": {
+        "id": 24010306,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "永不入战-活动",
+                "description": "关闭怪物受击、嘲讽、广播入战",
+                "abilityName": [
+                    "MonsterAffix_NeverCombat"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "怪物移速下限放开，受冰冻时间减少50%-塔防",
+                "description": "怪物移速下限放开，受冰冻时间减少50%",
+                "abilityName": [
+                    "MonsterAffix_MoveSpeedLimit_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加血量-塔防",
+                "description": "塔防翻牌叠加血量",
+                "abilityName": [
+                    "MonsterAffix_AdditionalHP_ForTowerDefense"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "翻牌叠加防御力-塔防",
+                "description": "塔防翻牌叠加防御力",
+                "abilityName": [
+                    "MonsterAffix_AdditionalDefence_ForTowerDefense"
+                ],
+                "isCommon": null
+            }
+        ],
+        "hpDrops": null,
         "prop": [
             {
                 "propType": "FIGHT_PROP_BASE_HP",
@@ -25762,6 +29289,69 @@
         "route": "Nimble Harvester Mek",
         "icon": "UI_MonsterIcon_MachinaIustitia_Assimilator"
     },
+    "24065791": {
+        "id": 24065791,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "正义机器-光",
+                "description": "正义机器-光性词缀",
+                "abilityName": [
+                    "Monster_MachinaIustitia_Ousia"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "正义机器-电池",
+                "description": "正义机器-电池词缀",
+                "abilityName": [
+                    "Monster_MachinaIustitia_Coil_02"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 44.625,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 31.875,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": "Ousia",
+        "reward": null,
+        "name": "机关·灵活采集型",
+        "route": "Nimble Harvester Mek",
+        "icon": "UI_MonsterIcon_MachinaIustitia_Assimilator"
+    },
     "24068701": {
         "id": 24068701,
         "type": "MONSTER_ORDINARY",
@@ -26605,6 +30195,69 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 89.2,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": "Pneuma",
+        "reward": null,
+        "name": "压制特化型机关",
+        "route": "Suppression Specialist Mek",
+        "icon": "UI_MonsterIcon_MachinaIustitia_Ruggiero_02"
+    },
+    "24060991": {
+        "id": 24060991,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "正义机器-荒",
+                "description": "正义机器-荒性词缀",
+                "abilityName": [
+                    "Monster_MachinaIustitia_Pneuma"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "正义机器-电池",
+                "description": "正义机器-电池词缀",
+                "abilityName": [
+                    "Monster_MachinaIustitia_Coil_02"
+                ],
+                "isCommon": null
+            },
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 46.41,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 102.765,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -30184,6 +33837,53 @@
         "route": "Secret Source Automaton: Hunter-Seeker",
         "icon": "UI_MonsterIcon_ToothTrap"
     },
+    "24090102": {
+        "id": 24090102,
+        "type": "MONSTER_ORDINARY",
+        "affix": null,
+        "hpDrops": [
+            {
+                "id": 22010011,
+                "hpPercent": 66
+            },
+            {
+                "id": 22010011,
+                "hpPercent": 33
+            }
+        ],
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 95.088,
+                "type": "GROW_CURVE_HP_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 75.36,
+                "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "秘源机兵·寻捕械",
+        "route": "Secret Source Automaton: Hunter-Seeker",
+        "icon": "UI_MonsterIcon_ToothTrap"
+    },
     "24090201": {
         "id": 24090201,
         "type": "MONSTER_BOSS",
@@ -30742,6 +34442,53 @@
         "route": "Treasure Hoarders: Scout",
         "icon": "UI_MonsterIcon_Thoarder_Male_Rogue_01"
     },
+    "25010291": {
+        "id": 25010291,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 15.3,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 20.145,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "盗宝团·斥候",
+        "route": "Treasure Hoarders: Scout",
+        "icon": "UI_MonsterIcon_Thoarder_Male_Rogue_01"
+    },
     "25010301": {
         "id": 25010301,
         "type": "MONSTER_ORDINARY",
@@ -30884,6 +34631,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 44.6,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "盗宝团·火之药剂师",
+        "route": "Treasure Hoarders: Pyro Potioneer",
+        "icon": "UI_MonsterIcon_Thoarder_Male_Chemist_Fire_01"
+    },
+    "25010391": {
+        "id": 25010391,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 25.5,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 50.49,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -31238,6 +35032,53 @@
                 "count": "0.084"
             }
         },
+        "name": "盗宝团·杂工",
+        "route": "Treasure Hoarders: Handyman",
+        "icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_01"
+    },
+    "25010791": {
+        "id": 25010791,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 27.03,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 10.2,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
         "name": "盗宝团·杂工",
         "route": "Treasure Hoarders: Handyman",
         "icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_01"
@@ -31995,19 +35836,19 @@
                 "name": "破旧的刀镡",
                 "rank": 1,
                 "icon": "UI_ItemIcon_112044",
-                "count": "0.8404"
+                "count": "1.6808"
             },
             "112045": {
                 "name": "影打刀镡",
                 "rank": 2,
                 "icon": "UI_ItemIcon_112045",
-                "count": "0.2241"
+                "count": "0.4482"
             },
             "112046": {
                 "name": "名刀镡",
                 "rank": 3,
                 "icon": "UI_ItemIcon_112046",
-                "count": "0.056"
+                "count": "0.112"
             }
         },
         "name": "野伏·机巧番",
@@ -32038,6 +35879,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 49.06,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "野伏·机巧番",
+        "route": "Nobushi: Kikouban",
+        "icon": "UI_MonsterIcon_Samurai_Ronin_03"
+    },
+    "25080391": {
+        "id": 25080391,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 38.25,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 52.275,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -32550,19 +36438,19 @@
                 "name": "破旧的刀镡",
                 "rank": 1,
                 "icon": "UI_ItemIcon_112044",
-                "count": "0.8404"
+                "count": "1.6808"
             },
             "112045": {
                 "name": "影打刀镡",
                 "rank": 2,
                 "icon": "UI_ItemIcon_112045",
-                "count": "0.2241"
+                "count": "0.4482"
             },
             "112046": {
                 "name": "名刀镡",
                 "rank": 3,
                 "icon": "UI_ItemIcon_112046",
-                "count": "0.056"
+                "count": "0.112"
             }
         },
         "name": "海乱鬼·雷腾",
@@ -32654,6 +36542,53 @@
         "route": "Kairagi: Dancing Thunder",
         "icon": "UI_MonsterIcon_Samurai_Kairagi_01"
     },
+    "25100191": {
+        "id": 25100191,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 88.23,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 94.35,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "海乱鬼·雷腾",
+        "route": "Kairagi: Dancing Thunder",
+        "icon": "UI_MonsterIcon_Samurai_Kairagi_01"
+    },
     "25100201": {
         "id": 25100201,
         "type": "MONSTER_ORDINARY",
@@ -32719,19 +36654,19 @@
                 "name": "破旧的刀镡",
                 "rank": 1,
                 "icon": "UI_ItemIcon_112044",
-                "count": "0.8404"
+                "count": "1.6808"
             },
             "112045": {
                 "name": "影打刀镡",
                 "rank": 2,
                 "icon": "UI_ItemIcon_112045",
-                "count": "0.2241"
+                "count": "0.4482"
             },
             "112046": {
                 "name": "名刀镡",
                 "rank": 3,
                 "icon": "UI_ItemIcon_112046",
-                "count": "0.056"
+                "count": "0.112"
             }
         },
         "name": "海乱鬼·炎威",
@@ -32809,6 +36744,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 100.4,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "海乱鬼·炎威",
+        "route": "Kairagi: Fiery Might",
+        "icon": "UI_MonsterIcon_Samurai_Kairagi_02"
+    },
+    "25100291": {
+        "id": 25100291,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 88.23,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 94.35,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -34054,6 +38036,53 @@
         "route": "Eremite Desert Clearwater",
         "icon": "UI_MonsterIcon_Eremite_Female_Slim_PushDagger"
     },
+    "25310191": {
+        "id": 25310191,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 77.775,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 66.3,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "镀金旅团·沙中净水",
+        "route": "Eremite Desert Clearwater",
+        "icon": "UI_MonsterIcon_Eremite_Female_Slim_PushDagger"
+    },
     "25310201": {
         "id": 25310201,
         "type": "MONSTER_ORDINARY",
@@ -34153,6 +38182,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 66.9,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "镀金旅团·炽阳凝冰",
+        "route": "Eremite Sunfrost",
+        "icon": "UI_MonsterIcon_Eremite_Male_Standard_Glaive"
+    },
+    "25310291": {
+        "id": 25310291,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 75.225,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 65.025,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -34353,6 +38429,53 @@
         "route": "Eremite Galehunter",
         "icon": "UI_MonsterIcon_Eremite_Female_Standard_Longbow"
     },
+    "25410291": {
+        "id": 25410291,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 66.3,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 79.56,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "镀金旅团·灵风猎手",
+        "route": "Eremite Galehunter",
+        "icon": "UI_MonsterIcon_Eremite_Female_Standard_Longbow"
+    },
     "25410301": {
         "id": 25410301,
         "type": "MONSTER_ORDINARY",
@@ -34397,6 +38520,53 @@
             "iceSubHurt": 0.1,
             "rockSubHurt": 0.1,
             "physicalSubHurt": -0.2
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "镀金旅团·炽沙叙事人",
+        "route": "Eremite Scorching Loremaster",
+        "icon": "UI_MonsterIcon_Eremite_Female_Standard_Oracle"
+    },
+    "25410391": {
+        "id": 25410391,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 62.73,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 66.3,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
         },
         "fundamentalForce": null,
         "reward": null,
@@ -40017,6 +44187,53 @@
         "route": "Geovishap Hatchling",
         "icon": "UI_MonsterIcon_Wyrm_Rock"
     },
+    "26030191": {
+        "id": 26030191,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 80.325,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 42.075,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.5,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "幼岩龙蜥",
+        "route": "Geovishap Hatchling",
+        "icon": "UI_MonsterIcon_Wyrm_Rock"
+    },
     "26040101": {
         "id": 26040101,
         "type": "MONSTER_ORDINARY",
@@ -42608,6 +46825,53 @@
         "route": "Electro Cicin",
         "icon": "UI_MonsterIcon_Cicin_Thunder_01"
     },
+    "26060191": {
+        "id": 26060191,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 5.9925,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 23.97,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.5,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "雷萤",
+        "route": "Electro Cicin",
+        "icon": "UI_MonsterIcon_Cicin_Thunder_01"
+    },
     "26060201": {
         "id": 26060201,
         "type": "MONSTER_ORDINARY",
@@ -42675,6 +46939,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 20.1,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.5,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "水萤",
+        "route": "Hydro Cicin",
+        "icon": "UI_MonsterIcon_Cicin_Water_01"
+    },
+    "26060291": {
+        "id": 26060291,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 5.9925,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 23.97,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -42843,6 +47154,53 @@
             "fireSubHurt": 0.1,
             "grassSubHurt": 0.2,
             "waterSubHurt": 0.2,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "浮游水蕈兽",
+        "route": "Floating Hydro Fungus",
+        "icon": "UI_MonsterIcon_Fungus_Un_Gamma_Water"
+    },
+    "26090192": {
+        "id": 26090192,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 13.8975,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 66.3,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
             "elecSubHurt": 0.1,
             "windSubHurt": 0.1,
             "iceSubHurt": 0.1,
@@ -43196,6 +47554,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 66.9,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "浮游风蕈兽",
+        "route": "Floating Anemo Fungus",
+        "icon": "UI_MonsterIcon_Fungus_Un_Delta_Wind"
+    },
+    "26090394": {
+        "id": 26090394,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 13.8975,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 81.6,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",
@@ -44427,6 +48832,53 @@
         "route": "Consecrated Red Vulture",
         "icon": "UI_MonsterIcon_Vulture_Sacred_Fire"
     },
+    "26100391": {
+        "id": 26100391,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 76.5,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 104.55,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "圣骸赤鹫",
+        "route": "Consecrated Red Vulture",
+        "icon": "UI_MonsterIcon_Vulture_Sacred_Fire"
+    },
     "26100401": {
         "id": 26100401,
         "type": "MONSTER_ORDINARY",
@@ -44529,6 +48981,53 @@
                 "icon": "UI_RelicIcon_10013_4"
             }
         },
+        "name": "圣骸毒蝎",
+        "route": "Consecrated Scorpion",
+        "icon": "UI_MonsterIcon_Scorpion_Sacred_Electric"
+    },
+    "26100491": {
+        "id": 26100491,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 91.8,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 75.225,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
         "name": "圣骸毒蝎",
         "route": "Consecrated Scorpion",
         "icon": "UI_MonsterIcon_Scorpion_Sacred_Electric"
@@ -44940,6 +49439,53 @@
                 "count": "0.07"
             }
         },
+        "name": "有翼冰本真蕈",
+        "route": "Winged Cryoshroom",
+        "icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Svarita_Ice"
+    },
+    "26120291": {
+        "id": 26120291,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 39.78,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 90.27,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
         "name": "有翼冰本真蕈",
         "route": "Winged Cryoshroom",
         "icon": "UI_MonsterIcon_Fungus_Amanita_Unu_Svarita_Ice"
@@ -47223,6 +51769,53 @@
         "route": "Sternshield Crab",
         "icon": "UI_MonsterIcon_HermitCrab_Mature"
     },
+    "26160191": {
+        "id": 26160191,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 43.35,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 79.815,
+                "type": "GrowCurveType_Unknown_5201"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "坚盾重甲蟹",
+        "route": "Sternshield Crab",
+        "icon": "UI_MonsterIcon_HermitCrab_Mature"
+    },
     "26160201": {
         "id": 26160201,
         "type": "MONSTER_ORDINARY",
@@ -47495,6 +52088,53 @@
                 "propType": "FIGHT_PROP_BASE_ATTACK",
                 "initValue": 35.7,
                 "type": "GROW_CURVE_ATTACK_2"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_DEFENSE",
+                "initValue": 500,
+                "type": "GROW_CURVE_DEFENSE"
+            }
+        ],
+        "resistance": {
+            "fireSubHurt": 0.1,
+            "grassSubHurt": 0.1,
+            "waterSubHurt": 0.1,
+            "elecSubHurt": 0.1,
+            "windSubHurt": 0.1,
+            "iceSubHurt": 0.1,
+            "rockSubHurt": 0.1,
+            "physicalSubHurt": 0.1
+        },
+        "fundamentalForce": null,
+        "reward": null,
+        "name": "泡泡雄海马",
+        "route": "Bubbler Seahorse",
+        "icon": "UI_MonsterIcon_SeaHorse_Mature"
+    },
+    "26160391": {
+        "id": 26160391,
+        "type": "MONSTER_ORDINARY",
+        "affix": [
+            {
+                "name": "5.2怪物自走棋敌方单位标记",
+                "description": "脚底光环、出生特效",
+                "abilityName": [
+                    "MonsterChess_Monster_Common_EnemyBottom"
+                ],
+                "isCommon": true
+            }
+        ],
+        "hpDrops": null,
+        "prop": [
+            {
+                "propType": "FIGHT_PROP_BASE_HP",
+                "initValue": 43.35,
+                "type": "GrowCurveType_Unknown_5202"
+            },
+            {
+                "propType": "FIGHT_PROP_BASE_ATTACK",
+                "initValue": 55.59,
+                "type": "GrowCurveType_Unknown_5201"
             },
             {
                 "propType": "FIGHT_PROP_BASE_DEFENSE",

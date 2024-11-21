@@ -6,8 +6,6 @@ from gsuid_core.logger import logger
 from gsuid_core.utils.api.minigg.request import (
     get_weapon_info,
     get_weapon_stats,
-    get_character_info,
-    get_character_stats,
 )
 
 from .Power import sp_prop
@@ -276,17 +274,24 @@ class Character:
             char_name_covert = '荧'
 
         self.char_id = await name_to_avatar_id(char_name_covert)
+        if not self.char_id and char_name != '旅行者':
+            return {}
+
+        '''
+        char_raw = await get_character_info(name=char_name_covert)
+        print(char_raw)
         try:
             char_raw = await get_character_info(name=char_name_covert)
         except:  # noqa: E722
             char_raw = -1
 
-        if not self.char_id and char_name != '旅行者':
-            return {}
         if isinstance(char_raw, int) or isinstance(char_raw, List):
             char_raw = char_data = await convert_ambr_to_minigg(self.char_id)
         else:
             char_data = await get_character_stats(char_name_covert, char_level)
+        '''
+
+        char_raw = char_data = await convert_ambr_to_minigg(self.char_id)
 
         if (
             isinstance(char_data, List)

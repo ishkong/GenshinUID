@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://github.com/KimigaiiWuyi/GenshinUID/"><img src="https://s2.loli.net/2023/03/25/bareSdYcsmRPOyZ.png" width="256" height="256" alt="GenshinUID"></a>
 </p>
-<h1 align = "center">GenshinUID 5.0.1</h1>
+<h1 align = "center">GenshinUID 5.1.2</h1>
 <h4 align = "center">✨支持OneBot(QQ)、QQ频道、微信、开黑啦、Telegram的全功能原神Bot插件✨</h4>
 <div align = "center">
         <a href="https://docs.sayu-bot.com/" target="_blank">安装文档</a> &nbsp; · &nbsp;
@@ -51,5 +51,5 @@
 + 如果对本插件有功能建议&Bug报告，欢迎提Issue & Pr，每一条都会详细看过
 + 如果本插件对你有帮助，不要忘了点个Star~
 + 本项目仅供学习使用，请勿用于商业用途
-+ [爱发电](https://afdian.net/@KimigaiiWuyi)
++ [爱发电](https://afdian.com/a/KimigaiiWuyi)
 + [GPL-3.0 License](https://github.com/KimigaiiWuyi/GenshinUID/blob/main/LICENSE) ©[@KimigaiiWuyi](https://github.com/KimigaiiWuyi)

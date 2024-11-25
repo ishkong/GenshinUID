@@ -224,7 +224,7 @@ async def convert_ambr_to_weapon(
         result[f'r{index+1}'] = {'description': effect_desc}
     else:
         if index != 0:
-            result['effect'] = result[f'r{index+1}']['description']
+            result['effectTemplateRaw'] = result[f'r{index+1}']['description']
     atk_curve_type = upgrade['prop'][0]['type']
     sp_curve_type = upgrade['prop'][1]['type']
     atk_curve = WEAPON_GROW_CURVE['90']['curveInfos'][atk_curve_type]

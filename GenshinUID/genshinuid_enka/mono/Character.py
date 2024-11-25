@@ -1,3 +1,4 @@
+import re
 from copy import deepcopy
 from typing import Dict, List, Tuple, Optional
 
@@ -14,11 +15,15 @@ from ..etc.get_buff_list import get_buff_list
 from ...genshinuid_config.gs_config import gsconfig
 from ..etc.status_change import EXTRA_CHAR_LIST, STATUS_CHAR_LIST
 from ..etc.MAP_PATH import ActionMAP, char_action, avatarName2SkillAdd
-from ...utils.map.GS_MAP_PATH import avatarName2Weapon, avatarName2Element
 from ...utils.map.name_covert import name_to_avatar_id, avatar_id_to_char_star
 from ...utils.ambr_to_minigg import (
     convert_ambr_to_minigg,
     convert_ambr_to_weapon,
+)
+from ...utils.map.GS_MAP_PATH import (
+    avatarName2Weapon,
+    avatarName2Element,
+    weaponId2Name_data,
 )
 from ..etc.base_info import (
     ATTR_MAP,
@@ -139,13 +144,25 @@ class Character:
                 weapon_raw_data = await get_weapon_info(weapon)
             except ConnectTimeout:
                 weapon_raw_data = -1
+
             if isinstance(weapon_raw_data, int) or isinstance(
                 weapon_raw_data, List
             ):
+                weapon_id = 0
                 if weapon in beta_weapons:
                     weapon_id = beta_weapons[weapon]
                 else:
+                    for _weapon_id in weaponId2Name_data:
+                        _weapon_name = weaponId2Name_data[_weapon_id]
+                        if _weapon_name == weapon:
+                            weapon_id = _weapon_id
+                            break
+                    else:
+                        return {}
+
+                if weapon_id == 0:
                     return {}
+
                 weapon_raw_data = await convert_ambr_to_weapon(weapon_id)
                 if not weapon_raw_data:
                     return {}
@@ -191,11 +208,18 @@ class Character:
                     )
                 weapon_info['weaponStats'][1]['statValue'] = fake_value
 
-            if 'effect' in weapon_raw_data:
-                weapon_info['weaponEffect'] = weapon_raw_data['effect'].format(
+            if 'effectTemplateRaw' in weapon_raw_data:
+                weapon_info['weaponEffect'] = weapon_raw_data[
+                    'effectTemplateRaw'
+                ].format(
                     *weapon_raw_data[
                         'r{}'.format(str(weapon_info['weaponAffix']))
                     ]
+                )
+                weapon_info['weaponEffect'] = re.sub(
+                    r'</?c[^\u4e00-\u9fa5/d]+>',
+                    '',
+                    weapon_info['weaponEffect'],
                 )
             else:
                 weapon_info['weaponEffect'] = '无特效。'

@@ -1,9 +1,12 @@
 import json
+import shutil
 import asyncio
 from copy import deepcopy
-from datetime import datetime
 from typing import Dict, Optional
+from datetime import datetime, timedelta
 
+import aiofiles
+from gsuid_core.logger import logger
 from gsuid_core.utils.error_reply import SK_HINT
 
 from ..utils.mys_api import mys_api
@@ -33,6 +36,70 @@ gacha_type_meta_data = {
     '集录祈愿': ['500'],
 }
 
+full_lock = []
+lock = []
+
+
+async def get_full_gachalog(uid: str):
+    if uid in full_lock:
+        return '当前正在全量刷新抽卡记录中, 请勿重试!请稍后再试...!'
+
+    full_lock.append(uid)
+    path = PLAYER_PATH / str(uid)
+    if not path.exists():
+        path.mkdir(parents=True, exist_ok=True)
+
+    # 获取当前时间
+    now = datetime.now()
+    current_time = now.strftime('%Y-%m-%d %H-%M-%S')
+    # 抽卡记录json路径
+    gachalogs_path = path / 'gacha_logs.json'
+    if gachalogs_path.exists():
+        gacha_log_backup_path = path / f'gacha_logs_{current_time}.json'
+        shutil.copy(gachalogs_path, gacha_log_backup_path)
+        logger.info(
+            f'[全量刷新抽卡记录] 已备份抽卡记录到{gacha_log_backup_path}'
+        )
+        async with aiofiles.open(gachalogs_path, "r", encoding='UTF-8') as f:
+            gachalogs_history: Dict = json.loads(await f.read())
+        gachalogs_history = remove_gachalog(gachalogs_history)
+        async with aiofiles.open(gachalogs_path, "w", encoding='UTF-8') as f:
+            await f.write(
+                json.dumps(
+                    gachalogs_history,
+                    ensure_ascii=False,
+                )
+            )
+        im = await save_gachalogs(uid, None)
+    else:
+        im = '你还没有已缓存的抽卡记录, 请使用刷新抽卡记录！'
+    full_lock.remove(uid)
+    return im
+
+
+def remove_gachalog(gachalog: Dict, month: int = 5):
+    now = datetime.now()
+    threshold = now - timedelta(days=month * 30)
+
+    map_num = {
+        '新手祈愿': 'new_gacha_num',
+        '常驻祈愿': 'normal_gacha_num',
+        '角色祈愿': 'char_gacha_num',
+        '武器祈愿': 'weapon_gacha_num',
+        '集录祈愿': 'mix_gacha_num',
+    }
+    for gacha_name in map_num:
+        gachanum_name = map_num[gacha_name]
+        gachalog['data'][gacha_name] = [
+            item
+            for item in gachalog['data'][gacha_name]
+            if datetime.strptime(item["time"], "%Y-%m-%d %H:%M:%S")
+            <= threshold
+        ]
+        gachalog[gachanum_name] = len(gachalog['data'][gacha_name])
+
+    return gachalog
+
 
 async def get_new_gachalog(uid: str, full_data: Dict, is_force: bool):
     temp = []
@@ -41,7 +108,10 @@ async def get_new_gachalog(uid: str, full_data: Dict, is_force: bool):
             end_id = '0'
             for page in range(1, 999):
                 data = await mys_api.get_gacha_log_by_authkey(
-                    uid, gacha_type, page, end_id
+                    uid,
+                    gacha_type,
+                    page,
+                    end_id,
                 )
                 await asyncio.sleep(0.9)
                 if isinstance(data, int):
@@ -77,6 +147,9 @@ async def get_new_gachalog(uid: str, full_data: Dict, is_force: bool):
 async def save_gachalogs(
     uid: str, raw_data: Optional[dict] = None, is_force: bool = False
 ) -> str:
+    if uid in lock:
+        return '当前正在刷新抽卡记录中, 请勿重试!请稍后再试...!'
+    lock.append(uid)
     path = PLAYER_PATH / str(uid)
     if not path.exists():
         path.mkdir(parents=True, exist_ok=True)
@@ -103,8 +176,8 @@ async def save_gachalogs(
     ) = (0, 0, 0, 0, 0)
 
     if gachalogs_path.exists():
-        with open(gachalogs_path, "r", encoding='UTF-8') as f:
-            gachalogs_history: Dict = json.load(f)
+        async with aiofiles.open(gachalogs_path, "r", encoding='UTF-8') as f:
+            gachalogs_history: Dict = json.loads(await f.read())
         gachalogs_history = gachalogs_history['data']
         old_normal_gacha_num = len(gachalogs_history['常驻祈愿'])
         old_char_gacha_num = len(gachalogs_history['角色祈愿'])
@@ -140,6 +213,7 @@ async def save_gachalogs(
                 raw_data[i].extend(gachalogs_history[i])
 
     if raw_data == {} or not raw_data:
+        lock.remove(uid)
         return SK_HINT
 
     if '集录祈愿' not in raw_data:
@@ -190,4 +264,5 @@ async def save_gachalogs(
         )
         if new_add > 0:
             im += f'\n新手祈愿{new_add}个！'
+    lock.remove(uid)
     return im

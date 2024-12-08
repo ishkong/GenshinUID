@@ -391,9 +391,9 @@
         "need_admin": false
       },
       {
-        "name": "圣遗物排行榜",
+        "name": "圣遗物排名",
         "desc": "查看圣遗物全球排名",
-        "eg": "圣遗物排行榜暴击伤害",
+        "eg": "圣遗物排名暴击伤害",
         "need_ck": false,
         "need_sk": false,
         "need_admin": false

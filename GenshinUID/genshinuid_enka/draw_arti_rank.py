@@ -45,6 +45,7 @@ SUBSTAT_MAP = {
     'Geo DMG Bonus': '岩元素伤害加成',
     'Dendro DMG Bonus': '草元素伤害加成',
     'Healing Bonus': '治疗加成',
+    'Physical DMG Bonus': '物理伤害加成',
     'Physical Bonus': '物理伤害加成',
 }
 

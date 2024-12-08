@@ -104,7 +104,7 @@ async def send_my_role_rank_pic(bot: Bot, ev: Event):
     await bot.send_option(im, [a, c, b, d])
 
 
-@sv_akasha.on_command('圣遗物排名')
+@sv_akasha.on_command(('圣遗物排名', '圣遗物排行榜'))
 async def send_arti_rank_pic(bot: Bot, ev: Event):
     # 获取排序名
     msg = ''.join(re.findall('[\u4e00-\u9fa5 ]', ev.text))

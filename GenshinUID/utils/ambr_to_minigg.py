@@ -129,6 +129,18 @@ async def convert_exist_data_to_char(
         async with aiofiles.open(path, 'w', encoding='utf-8') as f:
             await f.write(json.dumps(raw_data))
 
+    substatText = PROP_MAP[
+        list(raw_data['upgrade']['promote'][-1]['addProps'].keys())[-1]
+    ]
+    sp = raw_data['upgrade']['promote'][-1]['addProps'][
+        list(raw_data['upgrade']['promote'][-1]['addProps'].keys())[-1]
+    ]
+
+    if substatText == '暴击伤害':
+        sp += 0.5
+    elif substatText == '暴击率':
+        sp += 0.05
+
     result = {
         'name': raw_data['name'],
         'title': raw_data['fetter']['title'],
@@ -137,9 +149,7 @@ async def convert_exist_data_to_char(
         'elementText': ELEMENT_MAP[raw_data['element']],
         'element': ELEMENT_MAP[raw_data['element']],
         'images': {'namesideicon': raw_data['icon']},  # 暂时适配
-        'substatText': PROP_MAP[
-            list(raw_data['upgrade']['promote'][-1]['addProps'].keys())[-1]
-        ],
+        'substatText': substatText,
         'hp': raw_data['upgrade']['prop'][0]['initValue']
         * GROW_CURVE_LIST[89]['curveInfos'][
             TYPE_TO_INT[raw_data['upgrade']['prop'][0]['type']]
@@ -159,9 +169,7 @@ async def convert_exist_data_to_char(
         + raw_data['upgrade']['promote'][-1]['addProps'][
             'FIGHT_PROP_BASE_DEFENSE'
         ],
-        'specialized': raw_data['upgrade']['promote'][-1]['addProps'][
-            list(raw_data['upgrade']['promote'][-1]['addProps'].keys())[-1]
-        ],
+        'specialized': sp,
     }
     return cast(ConvertCharacter, result)
 
@@ -308,4 +316,5 @@ async def convert_ambr_to_talent(
                 result[f'combat{index+1}']['attributes']['parameters'][
                     para
                 ].append(talent_data[i]['promote'][level]['params'][ig])
+    return cast(CharacterTalents, result)
     return cast(CharacterTalents, result)

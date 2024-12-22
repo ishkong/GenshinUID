@@ -7,6 +7,7 @@ from gsuid_core.gss import gss
 from gsuid_core.models import Event
 from gsuid_core.aps import scheduler
 from gsuid_core.logger import logger
+from gsuid_core.subscribe import gs_subscribe
 from gsuid_core.utils.error_reply import UID_HINT
 
 from .util import black_ids
@@ -19,6 +20,7 @@ from .ann_card import sub_ann, unsub_ann, ann_list_card, ann_detail_card
 sv_ann = SV('原神公告')
 sv_ann_sub = SV('原神公告订阅', pm=2)
 sv_ann_hint = SV('原神公告红点')
+sv_ann_schedule = SV('原神定时清空公告红点', priority=3)
 
 
 @sv_ann.on_command(('原神公告'))
@@ -51,13 +53,47 @@ async def unsub_ann_(bot: Bot, ev: Event):
     await bot.send(unsub_ann(bot.bot_id, ev.group_id))
 
 
-@sv_ann_hint.on_fullmatch(('取消原神公告红点', '清除原神公告红点'))
+@sv_ann_hint.on_fullmatch(
+    (
+        '取消原神公告红点',
+        '清除原神公告红点',
+        '清除公告红点',
+        '取消公告红点',
+    )
+)
 async def consume_remind_(bot: Bot, ev: Event):
     uid = await get_uid(bot, ev)
     if uid is None:
         return await bot.send(UID_HINT)
     else:
         await bot.send(await consume_remind(uid))
+
+
+@sv_ann_schedule.on_fullmatch(('开启自动清红', '关闭自动清红'))
+async def get_ann_schedule_msg(bot: Bot, ev: Event):
+    uid = await get_uid(bot, ev)
+    if not uid:
+        return await bot.send(UID_HINT)
+
+    logger.info(f'[原神][开启定时清空公告红点] UID: {uid}')
+    await gs_subscribe.add_subscribe(
+        'single',
+        '[原神] 自动清红',
+        ev,
+        extra_message=uid,
+    )
+    await bot.send(f'UID{uid}已开启自动清红!')
+
+
+@scheduler.scheduled_job('cron', hour='*/5')
+async def send_ann_schedule():
+    logger.info('[原神][定时清空公告红点] 正在执行中!')
+    datas = await gs_subscribe.get_subscribe('[原神] 自动清红')
+    if datas:
+        for subscribe in datas:
+            if subscribe.extra_message:
+                await consume_remind(subscribe.extra_message)
+                await asyncio.sleep(random.uniform(5, 10))
 
 
 @scheduler.scheduled_job('cron', minute=10)

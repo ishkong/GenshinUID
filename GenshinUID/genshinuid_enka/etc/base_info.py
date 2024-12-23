@@ -72,6 +72,16 @@ ELEMENT_MAP = {
     '火': 'Pyro',
 }
 
+ELEMENT_TEXT_MAP = {
+    'Anemo': '风',
+    'Cryo': '冰',
+    'Dendro': '草',
+    'Electro': '雷',
+    'Geo': '岩',
+    'Hydro': '水',
+    'Pyro': '火',
+}
+
 ICON_ELEMENT = {
     '风': 'Wind',
     '冰': 'Ice',

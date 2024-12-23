@@ -2,6 +2,7 @@ import json
 import asyncio
 from typing import Tuple, Union, Literal
 
+import aiofiles
 from PIL import Image, ImageDraw
 from gsuid_core.models import Event
 
@@ -80,8 +81,10 @@ async def draw_cahrcard_list(
     char_done_list = []
     for char_name in char_list:
         temp = {}
-        with open(uid_fold / f'{char_name}.json', 'r', encoding='UTF-8') as f:
-            raw_data = json.load(f)
+        async with aiofiles.open(
+            uid_fold / f'{char_name}.json', 'r', encoding='UTF-8'
+        ) as f:
+            raw_data = json.loads(await f.read())
 
         skill_list = raw_data['avatarSkill']
 

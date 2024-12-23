@@ -3,6 +3,7 @@ import json
 from typing import List, Union, Optional, TypedDict, cast
 
 import aiofiles
+from gsuid_core.logger import logger
 from gsuid_core.utils.api.minigg.models import CharacterTalents
 from gsuid_core.utils.api.ambr.request import (
     get_ambr_char_data,
@@ -115,7 +116,7 @@ class ConvertCharacter(TypedDict):
 
 
 async def convert_exist_data_to_char(
-    char_id: Union[str, int]
+    char_id: Union[str, int], element: Optional[str] = None
 ) -> ConvertCharacter:
     path = CHAR_DATA_PATH / f'{char_id}.json'
     if path.exists():
@@ -124,6 +125,7 @@ async def convert_exist_data_to_char(
     else:
         raw_data = await get_ambr_char_data(char_id)
         if raw_data is None:
+            logger.error(f'[AmbrData] 未找到该角色{char_id}/数据无法下载!')
             raise Exception('[AmbrData] 未找到该角色/数据无法下载!')
         # 保存
         async with aiofiles.open(path, 'w', encoding='utf-8') as f:
@@ -146,8 +148,10 @@ async def convert_exist_data_to_char(
         'title': raw_data['fetter']['title'],
         'rarity': raw_data['rank'],
         'weapontype': WEAPON_TYPE[raw_data['weaponType']],
-        'elementText': ELEMENT_MAP[raw_data['element']],
-        'element': ELEMENT_MAP[raw_data['element']],
+        'elementText': (
+            element if element else ELEMENT_MAP[raw_data['element']]
+        ),
+        'element': element if element else ELEMENT_MAP[raw_data['element']],
         'images': {'namesideicon': raw_data['icon']},  # 暂时适配
         'substatText': substatText,
         'hp': raw_data['upgrade']['prop'][0]['initValue']
@@ -229,7 +233,7 @@ async def convert_ambr_to_weapon(
             effect_up[affix],
         )
 
-        result[f'r{index+1}'] = {'description': effect_desc}
+        result[f'r{index+1}'] = {'description': effect_desc, 'values': []}
     else:
         if index != 0:
             result['effectTemplateRaw'] = result[f'r{index+1}']['description']
@@ -246,9 +250,9 @@ async def convert_ambr_to_weapon(
 
 
 async def convert_ambr_to_minigg(
-    char_id: Union[str, int]
+    char_id: Union[str, int], element
 ) -> Optional[ConvertCharacter]:
-    return await convert_exist_data_to_char(char_id)
+    return await convert_exist_data_to_char(char_id, element)
 
 
 async def convert_ambr_to_talent(

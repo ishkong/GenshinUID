@@ -30,6 +30,7 @@ from ..etc.base_info import (
     ELEMENT_MAP,
     ICON_ELEMENT,
     PERCENT_ATTR,
+    ELEMENT_TEXT_MAP,
     baseFightProp,
     baseWeaponInfo,
 )
@@ -145,6 +146,7 @@ class Character:
             except ConnectTimeout:
                 weapon_raw_data = -1
 
+            weapon_raw_data = -1
             if isinstance(weapon_raw_data, int) or isinstance(
                 weapon_raw_data, List
             ):
@@ -158,7 +160,13 @@ class Character:
                             weapon_id = _weapon_id
                             break
                     else:
-                        return {}
+                        for _weapon_id in weaponId2Name_data:
+                            _weapon_name = weaponId2Name_data[_weapon_id]
+                            if weapon in _weapon_name:
+                                weapon_id = _weapon_id
+                                break
+                        else:
+                            return {}
 
                 if weapon_id == 0:
                     return {}
@@ -214,7 +222,7 @@ class Character:
                 ].format(
                     *weapon_raw_data[
                         'r{}'.format(str(weapon_info['weaponAffix']))
-                    ]
+                    ]['values']
                 )
                 weapon_info['weaponEffect'] = re.sub(
                     r'</?c[^\u4e00-\u9fa5/d]+>',
@@ -300,6 +308,8 @@ class Character:
         self.char_id = await name_to_avatar_id(char_name_covert)
         if not self.char_id and char_name != '旅行者':
             return {}
+        elif char_name == '旅行者':
+            self.char_id = '10000007'
 
         '''
         char_raw = await get_character_info(name=char_name_covert)
@@ -315,7 +325,10 @@ class Character:
             char_data = await get_character_stats(char_name_covert, char_level)
         '''
 
-        char_raw = char_data = await convert_ambr_to_minigg(self.char_id)
+        char_raw = char_data = await convert_ambr_to_minigg(
+            self.char_id,
+            ELEMENT_TEXT_MAP[self.char_element],
+        )
 
         if (
             isinstance(char_data, List)

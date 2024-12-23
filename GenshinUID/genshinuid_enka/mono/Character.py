@@ -146,7 +146,6 @@ class Character:
             except ConnectTimeout:
                 weapon_raw_data = -1
 
-            weapon_raw_data = -1
             if isinstance(weapon_raw_data, int) or isinstance(
                 weapon_raw_data, List
             ):

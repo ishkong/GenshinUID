@@ -10,6 +10,7 @@ from gsuid_core.logger import logger
 from gsuid_core.utils.error_reply import SK_HINT
 
 from ..utils.mys_api import mys_api
+from .check_gachalogs import check_gachalogs
 from ..utils.resource.RESOURCE_PATH import PLAYER_PATH
 
 NULL_GACHA_LOG = {
@@ -124,6 +125,7 @@ async def get_new_gachalog(uid: str, full_data: Dict, is_force: bool):
                 if gacha_name not in full_data:
                     full_data[gacha_name] = []
 
+                data = await check_gachalogs(data)
                 if data[-1] in full_data[gacha_name] and not is_force:
                     for item in data:
                         if item not in full_data[gacha_name]:
@@ -141,6 +143,8 @@ async def get_new_gachalog(uid: str, full_data: Dict, is_force: bool):
                 else:
                     full_data[gacha_name].extend(data)
                 await asyncio.sleep(0.5)
+    for i in full_data:
+        full_data[i] = await check_gachalogs(full_data[i])
     return full_data
 
 
@@ -194,6 +198,9 @@ async def save_gachalogs(
             old_new_gacha_num = 0
     else:
         gachalogs_history = deepcopy(NULL_GACHA_LOG)
+
+    for i in all_gacha_type_name:
+        gachalogs_history[i] = await check_gachalogs(gachalogs_history[i])
 
     # 获取新抽卡记录
     if raw_data is None:

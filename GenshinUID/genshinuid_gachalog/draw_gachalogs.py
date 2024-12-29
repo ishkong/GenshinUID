@@ -9,6 +9,7 @@ from PIL import Image, ImageDraw
 from gsuid_core.models import Event
 from gsuid_core.logger import logger
 
+from ..utils.map.GS_MAP_PATH import charList
 from ..utils.image.convert import convert_img
 from .get_gachalogs import all_gacha_type_name
 from ..utils.map.name_covert import name_to_avatar_id
@@ -436,6 +437,13 @@ async def draw_gachalogs_img(uid: str, ev: Event) -> Union[bytes, str]:
             item_x = (item_index % 6) * 138 + 60
             item_y = (item_index // 6) * 150 + y + 275
             xy_point = (item_x, item_y)
+
+            if 'item_type' not in item:
+                if item['item_id'] in charList:
+                    item['item_type'] = '角色'
+                else:
+                    item['item_type'] = '武器'
+
             tasks.append(
                 _draw_card(
                     img,

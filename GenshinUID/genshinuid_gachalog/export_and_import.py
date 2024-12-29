@@ -36,10 +36,12 @@ async def import_data(uid: str, raw_data: List[Dict]):
                 item['rank_type'] = (
                     '5' if char_data['rank'] == 'QUALITY_ORANGE' else '4'
                 )
+                item['item_type'] = '角色'
             else:
                 weapon_data = weaponList[str(item['item_id'])]
                 item['name'] = weapon_data['CHS']
                 item['rank_type'] = str(weapon_data['rank'])
+                item['item_type'] = '武器'
 
         item['uid'] = uid
         item['item_id'] = item['item_id'] if 'item_id' in item else ''

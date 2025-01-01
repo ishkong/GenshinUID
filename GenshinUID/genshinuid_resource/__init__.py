@@ -5,7 +5,7 @@ from gsuid_core.logger import logger
 
 from ..utils.resource.download_all_resource import download_all_resource
 
-sv_download_config = SV('下载资源', pm=2)
+sv_download_config = SV('gs下载资源', pm=2)
 
 
 @sv_download_config.on_fullmatch(('下载全部资源'))
@@ -17,6 +17,6 @@ async def send_download_resource_msg(bot: Bot, ev: Event):
 
 async def startup():
     logger.info(
-        '[资源文件下载] 正在检查与下载缺失的资源文件，可能需要较长时间，请稍等'
+        '[Genshin资源文件下载] 正在检查与下载缺失的资源文件，可能需要较长时间，请稍等'
     )
-    logger.info(f'[资源文件下载] {await download_all_resource()}')
+    logger.info(f'[Genshin资源文件下载] {await download_all_resource()}')

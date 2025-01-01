@@ -1,4 +1,66 @@
 {
+  "焚曜千阳": {
+    "normal": {
+      "normal_effect": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      }
+    },
+    "fight": {
+      "fight_effect": {
+        "1": "critDmg+20;addAtk+28",
+        "2": "critDmg+25;addAtk+35",
+        "3": "critDmg+30;addAtk+42",
+        "4": "critDmg+35;addAtk+49",
+        "5": "critDmg+40;addAtk+56"
+      },
+      "group_effect": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": ""
+      },
+      "time": 10,
+      "extra": {
+        
+      }
+    }
+  },
+  "祭星者之望": {
+    "normal": {
+      "normal_effect": {
+        "1": "elementalMastery+100",
+        "2": "elementalMastery+125",
+        "3": "elementalMastery+150",
+        "4": "elementalMastery+175",
+        "5": "elementalMastery+200"
+      }
+    },
+    "fight": {
+      "fight_effect": {
+        "1": "dmgBonus+28",
+        "2": "dmgBonus+35",
+        "3": "dmgBonus+42",
+        "4": "dmgBonus+49",
+        "5": "dmgBonus+56"
+      },
+      "group_effect": {
+        "1": "dmgBonus+28",
+        "2": "dmgBonus+35",
+        "3": "dmgBonus+42",
+        "4": "dmgBonus+49",
+        "5": "dmgBonus+56"
+      },
+      "time": 15,
+      "extra": {
+        
+      }
+    }
+  },
   "厄水之祸": {
     "normal": {
       "normal_effect": {

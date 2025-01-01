@@ -250,7 +250,7 @@ async def convert_ambr_to_weapon(
 
 
 async def convert_ambr_to_minigg(
-    char_id: Union[str, int], element
+    char_id: Union[str, int], element: Optional[str] = None
 ) -> Optional[ConvertCharacter]:
     return await convert_exist_data_to_char(char_id, element)
 

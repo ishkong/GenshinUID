@@ -316,17 +316,27 @@ async def avatarName2ElementJson() -> None:
     }
     for _id in avatarId2Name:
         print(_id)
-        if _id in ['10000005', '10000007'] or int(_id) >= 11000000:
+        if _id in ['10000005', '10000007', '10000001'] or int(_id) >= 11000000:
             continue
         name = avatarId2Name[_id]
         try:
+            data = await convert_ambr_to_minigg(_id)
+            '''
             data = httpx.get(
                 f'https://info.minigg.cn/characters?query={name}'
             ).json()
             if 'retcode' in data:
-                data = await convert_ambr_to_minigg(_id)
+                try:
+                    data = await convert_ambr_to_minigg(_id)
+                    break
+                except:  # noqa: E722
+                    continue
+            '''
         except json.decoder.JSONDecodeError:
             data = await convert_ambr_to_minigg(_id)
+        except Exception as e:
+            print(e)
+            continue
 
         if data is not None and 'code' not in data:
             temp[name] = elementMap[data['elementText']]
@@ -523,6 +533,7 @@ async def restore_mysData():
 
 
 async def save_all_weapon_data():
+    print('正在执行save_all_weapon_data')
     global weaponList
     if not weaponList:
         with open(MAP_PATH / weaponList_fileName, 'r', encoding='UTF-8') as f:
@@ -537,6 +548,7 @@ async def save_all_weapon_data():
 
 
 async def save_all_char_data():
+    print('正在执行save_all_char_data')
     with open(MAP_PATH / charList_fileName, 'r', encoding='UTF-8') as f:
         charList = json.load(f)
 
@@ -548,17 +560,16 @@ async def save_all_char_data():
 
 
 async def main():
-    '''
-    await download_new_file()
+    # await download_new_file()
     await restore_mysData()
     await restore_hakush_data()
+    # await monster2map()
     global raw_data
     try:
         with open(DATA_PATH / 'TextMapCHS.json', 'r', encoding='UTF-8') as f:
             raw_data = json.load(f)
     except FileNotFoundError:
         pass
-    await monster2map()
     await avatarId2NameJson()
     await avatarName2ElementJson()
     await weaponHash2NameJson()
@@ -568,7 +579,6 @@ async def main():
     await artifact2attrJson()
     await weaponId2Name()
     await avatarId2SkillGroupList()
-    '''
     await save_all_weapon_data()
     await save_all_char_data()
 

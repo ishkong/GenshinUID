@@ -1,4 +1,130 @@
 {
+  "玛薇卡": {
+    "normal": {
+      "normal_skill": {
+        "50": "",
+        "70": ""
+      },
+      "normal_talent": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      }
+    },
+    "fight": {
+      "fight_skill": {
+        "50": "addAtk+30",
+        "70": "dmgBonus+40"
+      },
+      "fight_talent": {
+        "1": "addAtk+40",
+        "2": "atk+200;ignoreDef+20",
+        "3": "",
+        "4": "Q:dmgBonus+10",
+        "5": "",
+        "6": "ignoreDef+20"
+      },
+      "group_skill": {
+        "50": "",
+        "70": "dmgBonus+40"
+      },
+      "group_talent": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      }
+    }
+  },
+  "茜特菈莉": {
+    "normal": {
+      "normal_skill": {
+        "50": "",
+        "70": ""
+      },
+      "normal_talent": {
+        "1": "",
+        "2": "elementalMastery+375",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      }
+    },
+    "fight": {
+      "fight_skill": {
+        "50": "HydroResist+-30;PyroResist+-30",
+        "70": "霜陨风暴:addDmg+90%elementalMasterys;冰风暴:addDmg+1200%elementalMasterys"
+      },
+      "fight_talent": {
+        "1": "",
+        "2": "HydroResist+-20;PyroResist+-20",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "DmgBonus+100"
+      },
+      "group_skill": {
+        "50": "",
+        "70": ""
+      },
+      "group_talent": {
+        "1": "",
+        "2": "elementalMastery+250",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "HydroDmgBonus+60;PyroDmgBonus+60"
+      }
+    }
+  },
+  "蓝砚": {
+    "normal": {
+      "normal_skill": {
+        "50": "",
+        "70": ""
+      },
+      "normal_talent": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": ""
+      }
+    },
+    "fight": {
+      "fight_skill": {
+        "50": "",
+        "70": "E:addDmg+309%elementalMastery;Q:addDmg+774%elementalMastery"
+      },
+      "fight_talent": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "elementalMastery+60",
+        "5": "",
+        "6": ""
+      },
+      "group_skill": {
+        "50": "",
+        "70": ""
+      },
+      "group_talent": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "elementalMastery+60",
+        "5": "",
+        "6": ""
+      }
+    }
+  },
   "恰斯卡": {
     "normal": {
       "normal_skill": {

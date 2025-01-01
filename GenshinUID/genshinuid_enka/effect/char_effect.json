@@ -59,7 +59,7 @@
     "fight": {
       "fight_skill": {
         "50": "HydroResist+-30;PyroResist+-30",
-        "70": "霜陨风暴:addDmg+90%elementalMasterys;冰风暴:addDmg+1200%elementalMasterys"
+        "70": "霜陨风暴:addDmg+90%elementalMastery;冰风暴:addDmg+1200%elementalMastery"
       },
       "fight_talent": {
         "1": "",

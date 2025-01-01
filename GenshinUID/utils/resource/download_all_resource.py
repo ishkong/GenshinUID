@@ -8,4 +8,4 @@ async def download_all_resource():
     ret = [str(x) for x in ret if x]
     if ret:
         return '\n'.join(ret)
-    return '全部资源下载完成!'
+    return 'Genshin全部资源下载完成!'
